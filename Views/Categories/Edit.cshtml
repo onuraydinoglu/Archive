@@ -1,0 +1,10 @@
+﻿@model Category
+
+<form asp-controller="Categories" asp-action="Edit" method="post">
+    <input hidden asp-for="CategoryId">
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label">Name</label>
+        <input asp-for="Name" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-success">Güncelle</button>
+</form>

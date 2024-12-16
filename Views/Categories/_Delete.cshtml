@@ -1,0 +1,24 @@
+@model Category
+
+<!-- Modal -->
+<form asp-controller="Categories" asp-action="Delete" method="post">
+    <input hidden asp-for="@Model.CategoryId">
+    <div class="modal fade" id="exampleModal-@Model.CategoryId" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    @Model.Name Silmek istediğinize emin misiniz?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
