@@ -13,7 +13,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 });
 
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
-builder.Services.AddScoped<IMovieRepository, MovieRepository>();
+builder.Services.AddScoped<ISubCategoryRepository, SubCategoryRepository>();
 
 var app = builder.Build();
 

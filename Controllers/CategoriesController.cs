@@ -47,13 +47,6 @@ namespace ArchiveApp.Controllers
             return RedirectToAction("Index", "Categories");
         }
 
-        [HttpGet]
-        public async Task<IActionResult> Delete(int? id)
-        {
-            var category = await _categoryRepository.GetByIdCategoryAsync(id);
-            return View(category);
-        }
-
         [HttpPost]
         public async Task<IActionResult> Delete(int id)
         {

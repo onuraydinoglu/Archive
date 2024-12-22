@@ -1,24 +1,14 @@
-﻿@model Movie
+﻿@model SubCategory
 
-<form asp-controller="Movies" asp-action="Create" method="post">
+<form asp-controller="SubCategory" asp-action="Create" method="post">
     <div class="mb-3">
         <label asp-for="Name" class="form-label">Name</label>
         <input asp-for="Name" class="form-control">
     </div>
     <div class="mb-3">
-        <select asp-for=CategoryId class="form-select">
+        <select asp-for=CategoryId asp-items="ViewBag.Categories" class="form-select">
             <option value="">Seçiniz</option>
         </select>
-    </div>
-
-    <div class="col-6">
-        <select asp-for="CategoryId" asp-items="ViewBag.Categories" class="form-select">
-            <option value="">Seçiniz</option>
-        </select>
-    </div>
-    <div class="mb-3">
-        <label asp-for="Description" class="form-label">Description</label>
-        <input asp-for="Description" class="form-control">
     </div>
     <div class="mb-3 form-check">
         <input asp-for="State" class="form-check-input" id="exampleCheck1">

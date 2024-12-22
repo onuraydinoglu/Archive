@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArchiveApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+079b6269d198593561b47194b25f171446253d8d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArchiveApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArchiveApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

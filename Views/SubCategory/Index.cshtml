@@ -1,0 +1,40 @@
+@model IEnumerable<SubCategory>
+
+<div class="d-flex justify-content-between">
+    <h2>Movie List</h2>
+    <span><a asp-controller="SubCategory" asp-action="Create" class="btn btn-outline-primary">Add SubCategory</a></span>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Category Name</th>
+            <th scope="col">State</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">@item.SubCategoryId</th>
+                <td>@item.Name</td>
+                <td>@item.Category?.Name</td>
+                <td>@item.State</td>
+                <td>
+                    <a asp-controller="SubCategory" asp-action="Edit" asp-route-Id="@item.SubCategoryId"
+                        class="btn btn-sm btn-warning">Edit</a>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal-@item.SubCategoryId">
+                        Delete
+                    </button>
+                </td>
+            </tr>
+            @await Html.PartialAsync("_Delete", item)
+        }
+    </tbody>
+</table>

@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ArchiveApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241215144149_init")]
+    [Migration("20241222124256_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -41,20 +41,16 @@ namespace ArchiveApp.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("ArchiveApp.Models.Movie", b =>
+            modelBuilder.Entity("ArchiveApp.Models.SubCategory", b =>
                 {
-                    b.Property<int>("MovieId")
+                    b.Property<int>("SubCategoryId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MovieId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SubCategoryId"));
 
                     b.Property<int?>("CategoryId")
                         .HasColumnType("int");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -63,17 +59,17 @@ namespace ArchiveApp.Migrations
                     b.Property<bool>("State")
                         .HasColumnType("bit");
 
-                    b.HasKey("MovieId");
+                    b.HasKey("SubCategoryId");
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Movies");
+                    b.ToTable("SubCategories");
                 });
 
-            modelBuilder.Entity("ArchiveApp.Models.Movie", b =>
+            modelBuilder.Entity("ArchiveApp.Models.SubCategory", b =>
                 {
                     b.HasOne("ArchiveApp.Models.Category", "Category")
-                        .WithMany("Movies")
+                        .WithMany("SubCategories")
                         .HasForeignKey("CategoryId");
 
                     b.Navigation("Category");
@@ -81,7 +77,7 @@ namespace ArchiveApp.Migrations
 
             modelBuilder.Entity("ArchiveApp.Models.Category", b =>
                 {
-                    b.Navigation("Movies");
+                    b.Navigation("SubCategories");
                 });
 #pragma warning restore 612, 618
         }
