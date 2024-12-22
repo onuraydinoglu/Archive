@@ -13,7 +13,7 @@ namespace ArchiveApp.Repository
     }
     public async Task<IEnumerable<Product>> GetAllProductsAsync()
     {
-      var product = await _context.Products.Include(x => x.SubCategory).ToListAsync();
+      var product = await _context.Products.Include(x => x.SubCategory).ThenInclude(c => c.Category).ToListAsync();
       return product;
     }
 

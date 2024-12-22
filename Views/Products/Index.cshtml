@@ -11,6 +11,7 @@
       <th scope="col">#</th>
       <th scope="col">Name</th>
       <th scope="col">Sub Category</th>
+      <th scope="col">Category</th>
       <th scope="col">Description</th>
       <th scope="col">Store</th>
       <th scope="col">Price</th>
@@ -26,6 +27,7 @@
         <th scope="row">@product.Id</th>
         <td>@product.Name</td>
         <td>@product.SubCategory?.Name</td>
+        <td>@product.SubCategory?.Category?.Name</td>
         <td>@product.Description</td>
         <td>@product.Store</td>
         <td>@product.Price</td>

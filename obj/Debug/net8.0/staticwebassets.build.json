@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xOoP3yWqoF5JYPtDI455G92lS5V24kxVmOOOxXH/+6k=",
+  "Hash": "LauVdjD2txW5q3v8evItUxsHa+ox9HPJgEajANG6p2I=",
   "Source": "ArchiveApp",
   "BasePath": "_content/ArchiveApp",
   "Mode": "Default",
@@ -99,6 +99,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\ytk.jpeg",
+      "SourceId": "ArchiveApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\",
+      "BasePath": "_content/ArchiveApp",
+      "RelativePath": "image/ytk#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hihayc3ok4",
+      "Integrity": "10YKt0y2zq6/cNQb8GyjjK2ZkyGRCxGbItb9iI/iR0Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\ytk.jpeg"
     },
     {
       "Identity": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\js\\site.js",
@@ -1645,6 +1666,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "image/ytk.hihayc3ok4.jpeg",
+      "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\ytk.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "431276"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"10YKt0y2zq6/cNQb8GyjjK2ZkyGRCxGbItb9iI/iR0Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 22 Dec 2024 19:02:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hihayc3ok4"
+        },
+        {
+          "Name": "label",
+          "Value": "image/ytk.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-10YKt0y2zq6/cNQb8GyjjK2ZkyGRCxGbItb9iI/iR0Q="
+        }
+      ]
+    },
+    {
+      "Route": "image/ytk.jpeg",
+      "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\ytk.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "431276"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"10YKt0y2zq6/cNQb8GyjjK2ZkyGRCxGbItb9iI/iR0Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 22 Dec 2024 19:02:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-10YKt0y2zq6/cNQb8GyjjK2ZkyGRCxGbItb9iI/iR0Q="
         }
       ]
     },
