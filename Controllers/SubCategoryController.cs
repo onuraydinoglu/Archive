@@ -19,14 +19,14 @@ public class SubCategoryController : Controller
     [HttpGet]
     public async Task<IActionResult> Index()
     {
-        var movies = await _subCategoryRepository.GetAllSubCategoryAsync();
+        var movies = await _subCategoryRepository.GetAllSubCategoriesAsync();
         return View(movies);
     }
 
     [HttpGet]
     public async Task<IActionResult> Create()
     {
-        ViewBag.Categories = new SelectList(await _categoryRepository.GetAllCategoriesAsync(), "CategoryId", "Name");
+        ViewBag.Categories = new SelectList(await _categoryRepository.GetAllCategoriesAsync(), "Id", "Name");
         return View();
     }
 
@@ -41,7 +41,7 @@ public class SubCategoryController : Controller
     public async Task<IActionResult> Edit(int id)
     {
         var subCategory = await _subCategoryRepository.GetByIdSubCategoryAsync(id);
-        ViewBag.Categories = new SelectList(await _categoryRepository.GetAllCategoriesAsync(), "CategoryId", "Name");
+        ViewBag.Categories = new SelectList(await _categoryRepository.GetAllCategoriesAsync(), "Id", "Name");
         return View(subCategory);
     }
 

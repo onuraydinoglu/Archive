@@ -1,3 +1,4 @@
+using ArchiveApp.Repository;
 using ArchiveApp.Repository.Abstracts;
 using ArchiveApp.Repository.Concretes;
 using ArchiveApp.Repository.Context;
@@ -14,6 +15,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<ISubCategoryRepository, SubCategoryRepository>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 var app = builder.Build();
 

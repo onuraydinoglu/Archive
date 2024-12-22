@@ -1,9 +1,9 @@
 @model Category
 
 <!-- Modal -->
-<form asp-controller="Categories" asp-action="Delete" asp-route-id="@Model.CategoryId" method="post">
-    <input hidden asp-for="CategoryId">
-    <div class="modal fade" id="exampleModal-@Model.CategoryId" tabindex="-1" aria-labelledby="exampleModalLabel"
+<form asp-controller="Categories" asp-action="Delete" asp-route-id="@Model.Id" method="post">
+    <input hidden asp-for="Id">
+    <div class="modal fade" id="exampleModal-@Model.Id" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">

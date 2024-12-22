@@ -13,7 +13,7 @@ public class SubCategoryRepository : ISubCategoryRepository
         _context = context;
     }
 
-    public async Task<IEnumerable<SubCategory>> GetAllSubCategoryAsync()
+    public async Task<IEnumerable<SubCategory>> GetAllSubCategoriesAsync()
     {
         var subCategorys = await _context.SubCategories.Include(x => x.Category).ToListAsync();
         return subCategorys;
@@ -40,7 +40,6 @@ public class SubCategoryRepository : ISubCategoryRepository
     {
         var mvi = await GetByIdSubCategoryAsync(id);
         mvi.Name = subCategory.Name;
-        mvi.State = subCategory.State;
         mvi.CategoryId = subCategory.CategoryId;
         _context.SubCategories.Update(mvi);
         await _context.SaveChangesAsync();

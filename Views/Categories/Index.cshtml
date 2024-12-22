@@ -17,15 +17,15 @@
         @foreach (var category in Model)
         {
             <tr>
-                <th scope="row">@category.CategoryId</th>
+                <th scope="row">@category.Id</th>
                 <td>@category.Name</td>
                 <td>
-                    <a asp-controller="Categories" asp-action="Edit" asp-route-Id="@category.CategoryId"
+                    <a asp-controller="Categories" asp-action="Edit" asp-route-Id="@category.Id"
                         class="btn btn-sm btn-warning">Edit</a>
 
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal-@category.CategoryId">
+                        data-bs-target="#exampleModal-@category.Id">
                         Delete
                     </button>
                 </td>

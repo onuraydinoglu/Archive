@@ -11,7 +11,6 @@
             <th scope="col">#</th>
             <th scope="col">Name</th>
             <th scope="col">Category Name</th>
-            <th scope="col">State</th>
             <th scope="col">Action</th>
         </tr>
     </thead>
@@ -19,17 +18,16 @@
         @foreach (var item in Model)
         {
             <tr>
-                <th scope="row">@item.SubCategoryId</th>
+                <th scope="row">@item.Id</th>
                 <td>@item.Name</td>
                 <td>@item.Category?.Name</td>
-                <td>@item.State</td>
                 <td>
-                    <a asp-controller="SubCategory" asp-action="Edit" asp-route-Id="@item.SubCategoryId"
+                    <a asp-controller="SubCategory" asp-action="Edit" asp-route-Id="@item.Id"
                         class="btn btn-sm btn-warning">Edit</a>
 
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal-@item.SubCategoryId">
+                        data-bs-target="#exampleModal-@item.Id">
                         Delete
                     </button>
                 </td>

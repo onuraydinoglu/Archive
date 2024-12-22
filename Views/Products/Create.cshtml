@@ -1,0 +1,30 @@
+@model Product
+
+<form asp-controller="Products" asp-action="Create" method="post">
+  <div class="mb-3">
+    <label asp-for="Name" class="form-label">Name</label>
+    <input asp-for="Name" class="form-control">
+  </div>
+  <div class="mb-3">
+    <select asp-for=SubCategoryId asp-items="ViewBag.SubCategories" class="form-select">
+      <option value="">Seçiniz</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label asp-for="Description" class="form-label">Description</label>
+    <input asp-for="Description" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label asp-for="Store" class="form-label">Store</label>
+    <input asp-for="Store" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label asp-for="Price" class="form-label">Price</label>
+    <input asp-for="Price" class="form-control">
+  </div>
+  <div class="mb-3 form-check">
+    <input asp-for="State" class="form-check-input" id="exampleCheck1">
+    <label asp-for="State" class="form-check-label" for="exampleCheck1">State?</label>
+  </div>
+  <button type="submit" class="btn btn-success">Ekle</button>
+</form>
