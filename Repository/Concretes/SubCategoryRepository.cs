@@ -36,14 +36,24 @@ public class SubCategoryRepository : ISubCategoryRepository
         return subCategory;
     }
 
-    public async Task UpdateSubCategoryAsync(int id, SubCategory subCategory)
+    public async Task UpdateSubCategoryAsync(int id, SubCategory subCategory, string newImagePath = null)
     {
-        var mvi = await GetByIdSubCategoryAsync(id);
-        mvi.Name = subCategory.Name;
-        mvi.CategoryId = subCategory.CategoryId;
-        _context.SubCategories.Update(mvi);
+        var existingSubCategory = await GetByIdSubCategoryAsync(id);
+
+        // Update sub-category properties
+        existingSubCategory.Name = subCategory.Name;
+        existingSubCategory.CategoryId = subCategory.CategoryId;
+
+        // Update the image if a new image path is provided
+        if (!string.IsNullOrEmpty(newImagePath))
+        {
+            existingSubCategory.Image = newImagePath;
+        }
+
+        _context.SubCategories.Update(existingSubCategory);
         await _context.SaveChangesAsync();
     }
+
 
     public async Task DeleteSubCategoryAsync(int id)
     {

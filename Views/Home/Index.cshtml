@@ -1,23 +1,34 @@
 ﻿@model HomeViewModel
 <div id="carouselExampleIndicators" class="carousel slide container-fluid">
     <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
+        @{
+            int counter = 0; // Farklı bir değişken adı kullanılıyor
+            foreach (var item in Model.Categories)
+            {
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="@counter"
+                    class="@(counter == 0 ? "active" : "")" aria-current="true" aria-label="Slide @counter"></button>
+                ;
+                counter++;
+            }
+        }
     </div>
     <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="~/image/ytk.jpeg" class="d-block w-100" alt="..." style="height: 550px;">
-        </div>
-        <div class="carousel-item">
-            <img src="~/image/ytk.jpeg" class="d-block w-100" alt="..." style="height: 550px;">
-        </div>
-        <div class="carousel-item">
-            <img src="~/image/ytk.jpeg" class="d-block w-100" alt="..." style="height: 550px;">
-        </div>
+        @{
+            int index = 0;
+            foreach (var item in Model.Categories)
+            {
+                <div class="carousel-item @(index == 0 ? "active" : "")">
+                    <a asp-controller="Categories" asp-action="Index">
+                        <img src="@item.Image" class="d-block w-100" alt="..." style="height: 550px; object-fit:cover">
+
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>@item.Name</h5>
+                        </div>
+                    </a>
+                </div>
+                index++;
+            }
+        }
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
         data-bs-slide="prev">
@@ -32,7 +43,7 @@
 </div>
 
 <div class="container my-5">
-    <div class="row">
+    @* <div class="row">
         <div class="col-12 mb-3">
             <h2>Kategoriler</h2>
         </div>
@@ -47,18 +58,19 @@
                 </div>
             </div>
         }
-    </div>
+    </div> *@
 
     <div class="row mt-5">
-        <h2>Ürünler</h2>
+        <h2 class="text-dark">Ürünler</h2>
         @foreach (var item in Model.Products)
         {
             <div class="col-3">
-                <div class="card">
-                    <img src="@item.Image" class="card-img-top" alt="...">
+                <div class="card mb-3">
+                    <img src="@item.Image" class="card-img-top" alt="..." style="height: 170px;">
                     <div class="card-body">
-                        <h5 class="card-title">@item.Name</h5>
-                        <a href="/products/@item.Url" class="btn btn-primary">Ürüne Git</a>
+                        <a href="products/details/@item.Url" class="text-secondary text-decoration-none">
+                            <h5 class="card-title">@item.Name</h5>
+                        </a>
                     </div>
                 </div>
             </div>

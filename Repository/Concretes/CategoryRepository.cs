@@ -38,11 +38,20 @@ public class CategoryRepository : ICategoryRepository
         return category;
     }
 
-    public async Task UpdateCategoryAsync(int id, Category category)
+    public async Task UpdateCategoryAsync(int id, Category category, string newImagePath = null)
     {
-        var ctg = await GetByIdCategoryAsync(id);
-        ctg.Name = category.Name;
-        _context.Categories.Update(ctg);
+        var existingCategory = await GetByIdCategoryAsync(id);
+
+        // Update category properties
+        existingCategory.Name = category.Name;
+
+        // Update the image if a new image path is provided
+        if (!string.IsNullOrEmpty(newImagePath))
+        {
+            existingCategory.Image = newImagePath;
+        }
+
+        _context.Categories.Update(existingCategory);
         await _context.SaveChangesAsync();
     }
 

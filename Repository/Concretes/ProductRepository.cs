@@ -1,3 +1,4 @@
+using System.Runtime.Intrinsics.Arm;
 using ArchiveApp.Models;
 using ArchiveApp.Repository.Context;
 using Microsoft.EntityFrameworkCore;
@@ -23,20 +24,23 @@ namespace ArchiveApp.Repository
 
       if (product is null)
       {
-        throw new Exception($"Aradığınız is : {id} bulunamadı.");
+        throw new Exception($"Aradığınız id : {id} bulunamadı.");
       }
 
       return product;
     }
+
     public async Task<Product> GetByUrlProductAsync(string? url)
     {
-      var product = await _context.Products.FirstOrDefaultAsync(x => x.Url == url);
+      var product = await _context.Products.Include(x => x.SubCategory).ThenInclude(c => c.Category).FirstOrDefaultAsync(x => x.Url == url);
       if (product is null)
       {
-        throw new Exception($"Aradığınız is : {url} bulunamadı.");
+        throw new Exception($"Aradığınız url : {url} bulunamadı.");
       }
+
       return product;
     }
+
     public async Task<Product> AddProductAsync(Product product)
     {
       await _context.Products.AddAsync(product);
@@ -44,9 +48,11 @@ namespace ArchiveApp.Repository
       return product;
     }
 
-    public async Task UpdateProductAsync(int id, Product product)
+    public async Task UpdateProductAsync(int id, Product product, string newImagePath = null)
     {
       var prd = await GetByIdProductAsync(id);
+
+      // Update product properties
       prd.Name = product.Name;
       prd.Description = product.Description;
       prd.Price = product.Price;
@@ -54,6 +60,13 @@ namespace ArchiveApp.Repository
       prd.SubCategoryId = product.SubCategoryId;
       prd.State = product.State;
       prd.Url = product.Url;
+
+      // Update the image if a new image path is provided
+      if (!string.IsNullOrEmpty(newImagePath))
+      {
+        prd.Image = newImagePath;
+      }
+
       _context.Update(prd);
       await _context.SaveChangesAsync();
     }
@@ -64,7 +77,5 @@ namespace ArchiveApp.Repository
       _context.Remove(prd);
       await _context.SaveChangesAsync();
     }
-
-
   }
 }

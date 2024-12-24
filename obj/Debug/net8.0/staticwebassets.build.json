@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SXJ6MuEHI5sYBiyKBjU34OjDsnwNO2IDn/pehxWnh/0=",
+  "Hash": "sGkZYIGDgz56SyYdziR1P1ibxqzLycLbXCf++IGHUmc=",
   "Source": "ArchiveApp",
   "BasePath": "_content/ArchiveApp",
   "Mode": "Default",
@@ -101,6 +101,27 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\0756a6f1-8025-4833-a54a-50231bc66416_car.jpg",
+      "SourceId": "ArchiveApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\",
+      "BasePath": "_content/ArchiveApp",
+      "RelativePath": "image/0756a6f1-8025-4833-a54a-50231bc66416_car#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s2oyzzo2gp",
+      "Integrity": "nOJHP2SxrvTK1CmzpF0tAcQbE/p1uViC9Rb30RgGNDk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\0756a6f1-8025-4833-a54a-50231bc66416_car.jpg"
+    },
+    {
       "Identity": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\2c3cbea7-fd7c-4b65-ae0f-96d856126bf3_be.jpg",
       "SourceId": "ArchiveApp",
       "SourceType": "Discovered",
@@ -122,6 +143,27 @@
       "OriginalItemSpec": "wwwroot\\image\\2c3cbea7-fd7c-4b65-ae0f-96d856126bf3_be.jpg"
     },
     {
+      "Identity": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\33f50618-29f2-448e-925a-a625f6ddd495_images.jpg",
+      "SourceId": "ArchiveApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\",
+      "BasePath": "_content/ArchiveApp",
+      "RelativePath": "image/33f50618-29f2-448e-925a-a625f6ddd495_images#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "smm3ywpsqe",
+      "Integrity": "VAdIsx/ExukSUAHrrGg/lxcuWIq5LVSFjt4PElgTTNg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\33f50618-29f2-448e-925a-a625f6ddd495_images.jpg"
+    },
+    {
       "Identity": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\3e47e281-2f11-4f2e-8708-99dae0b6d6db_images.jpg",
       "SourceId": "ArchiveApp",
       "SourceType": "Discovered",
@@ -141,6 +183,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\3e47e281-2f11-4f2e-8708-99dae0b6d6db_images.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\49874204-18e2-4b7d-a15d-75681949a223_ytk.jpeg",
+      "SourceId": "ArchiveApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\",
+      "BasePath": "_content/ArchiveApp",
+      "RelativePath": "image/49874204-18e2-4b7d-a15d-75681949a223_ytk#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hihayc3ok4",
+      "Integrity": "10YKt0y2zq6/cNQb8GyjjK2ZkyGRCxGbItb9iI/iR0Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\49874204-18e2-4b7d-a15d-75681949a223_ytk.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\5caaffb5-7774-47f0-93f8-4e6983fd09ed_çm.webp",
+      "SourceId": "ArchiveApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\",
+      "BasePath": "_content/ArchiveApp",
+      "RelativePath": "image/5caaffb5-7774-47f0-93f8-4e6983fd09ed_çm#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6hbl2x4mje",
+      "Integrity": "WlOiwPCKRft0kPBLMLZHADP3PlEyu0FaN75DTlZ3Xo4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\5caaffb5-7774-47f0-93f8-4e6983fd09ed_çm.webp"
     },
     {
       "Identity": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\61e23d70-7106-42be-9fd7-f5bc55241073_çm.webp",
@@ -206,6 +290,48 @@
       "OriginalItemSpec": "wwwroot\\image\\92c59bf6-2692-4fe5-9772-95d9187e63ed_car.jpg"
     },
     {
+      "Identity": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\9722e527-b6ee-4e93-a58a-75c463822ba4_ytk.jpeg",
+      "SourceId": "ArchiveApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\",
+      "BasePath": "_content/ArchiveApp",
+      "RelativePath": "image/9722e527-b6ee-4e93-a58a-75c463822ba4_ytk#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hihayc3ok4",
+      "Integrity": "10YKt0y2zq6/cNQb8GyjjK2ZkyGRCxGbItb9iI/iR0Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\9722e527-b6ee-4e93-a58a-75c463822ba4_ytk.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\983d0230-5e85-4269-9e8a-2f81e0ba20ab_car.jpg",
+      "SourceId": "ArchiveApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\",
+      "BasePath": "_content/ArchiveApp",
+      "RelativePath": "image/983d0230-5e85-4269-9e8a-2f81e0ba20ab_car#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s2oyzzo2gp",
+      "Integrity": "nOJHP2SxrvTK1CmzpF0tAcQbE/p1uViC9Rb30RgGNDk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\983d0230-5e85-4269-9e8a-2f81e0ba20ab_car.jpg"
+    },
+    {
       "Identity": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\a00f74a1-09ff-481b-b544-7b176e11ccb2_bm.webp",
       "SourceId": "ArchiveApp",
       "SourceType": "Discovered",
@@ -225,27 +351,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\a00f74a1-09ff-481b-b544-7b176e11ccb2_bm.webp"
-    },
-    {
-      "Identity": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\b02b635a-91c0-48f6-8853-fc362b18f1aa_ytk.jpeg",
-      "SourceId": "ArchiveApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\",
-      "BasePath": "_content/ArchiveApp",
-      "RelativePath": "image/b02b635a-91c0-48f6-8853-fc362b18f1aa_ytk#[.{fingerprint}]?.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "hihayc3ok4",
-      "Integrity": "10YKt0y2zq6/cNQb8GyjjK2ZkyGRCxGbItb9iI/iR0Q=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\b02b635a-91c0-48f6-8853-fc362b18f1aa_ytk.jpeg"
     },
     {
       "Identity": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\c6981593-73d4-4023-bba1-b7a04b74ec2e_car.jpg",
@@ -269,6 +374,69 @@
       "OriginalItemSpec": "wwwroot\\image\\c6981593-73d4-4023-bba1-b7a04b74ec2e_car.jpg"
     },
     {
+      "Identity": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\d6b0bd46-bd3f-4205-99c0-e304fffffa30_bm.webp",
+      "SourceId": "ArchiveApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\",
+      "BasePath": "_content/ArchiveApp",
+      "RelativePath": "image/d6b0bd46-bd3f-4205-99c0-e304fffffa30_bm#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "94txumsmmb",
+      "Integrity": "qUc0ovs5gzh6gvAfzFrfAjnvrVxoOj9+r8YfQusqNvI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\d6b0bd46-bd3f-4205-99c0-e304fffffa30_bm.webp"
+    },
+    {
+      "Identity": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\ec77e7da-c9fe-4e37-8d8d-8df5a0dff860_images.jpg",
+      "SourceId": "ArchiveApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\",
+      "BasePath": "_content/ArchiveApp",
+      "RelativePath": "image/ec77e7da-c9fe-4e37-8d8d-8df5a0dff860_images#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "smm3ywpsqe",
+      "Integrity": "VAdIsx/ExukSUAHrrGg/lxcuWIq5LVSFjt4PElgTTNg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\ec77e7da-c9fe-4e37-8d8d-8df5a0dff860_images.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\f233b5d6-a128-4ddf-ba72-70f6c4eedadb_images.jpg",
+      "SourceId": "ArchiveApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\",
+      "BasePath": "_content/ArchiveApp",
+      "RelativePath": "image/f233b5d6-a128-4ddf-ba72-70f6c4eedadb_images#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "smm3ywpsqe",
+      "Integrity": "VAdIsx/ExukSUAHrrGg/lxcuWIq5LVSFjt4PElgTTNg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\f233b5d6-a128-4ddf-ba72-70f6c4eedadb_images.jpg"
+    },
+    {
       "Identity": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\fad4394e-61ff-4249-8e49-4b53c6b42169_images.jpg",
       "SourceId": "ArchiveApp",
       "SourceType": "Discovered",
@@ -288,6 +456,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\fad4394e-61ff-4249-8e49-4b53c6b42169_images.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\ffe49957-a514-4e00-b7ae-4c84dbe8ab95_ytk.jpeg",
+      "SourceId": "ArchiveApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\",
+      "BasePath": "_content/ArchiveApp",
+      "RelativePath": "image/ffe49957-a514-4e00-b7ae-4c84dbe8ab95_ytk#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hihayc3ok4",
+      "Integrity": "10YKt0y2zq6/cNQb8GyjjK2ZkyGRCxGbItb9iI/iR0Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\ffe49957-a514-4e00-b7ae-4c84dbe8ab95_ytk.jpeg"
     },
     {
       "Identity": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\images.jpg",
@@ -1880,6 +2069,88 @@
       ]
     },
     {
+      "Route": "image/0756a6f1-8025-4833-a54a-50231bc66416_car.jpg",
+      "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\0756a6f1-8025-4833-a54a-50231bc66416_car.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7791"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nOJHP2SxrvTK1CmzpF0tAcQbE/p1uViC9Rb30RgGNDk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 17:06:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nOJHP2SxrvTK1CmzpF0tAcQbE/p1uViC9Rb30RgGNDk="
+        }
+      ]
+    },
+    {
+      "Route": "image/0756a6f1-8025-4833-a54a-50231bc66416_car.s2oyzzo2gp.jpg",
+      "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\0756a6f1-8025-4833-a54a-50231bc66416_car.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7791"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nOJHP2SxrvTK1CmzpF0tAcQbE/p1uViC9Rb30RgGNDk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 17:06:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s2oyzzo2gp"
+        },
+        {
+          "Name": "label",
+          "Value": "image/0756a6f1-8025-4833-a54a-50231bc66416_car.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nOJHP2SxrvTK1CmzpF0tAcQbE/p1uViC9Rb30RgGNDk="
+        }
+      ]
+    },
+    {
       "Route": "image/2c3cbea7-fd7c-4b65-ae0f-96d856126bf3_be.jpg",
       "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\2c3cbea7-fd7c-4b65-ae0f-96d856126bf3_be.jpg",
       "Selectors": [],
@@ -1962,6 +2233,88 @@
       ]
     },
     {
+      "Route": "image/33f50618-29f2-448e-925a-a625f6ddd495_images.jpg",
+      "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\33f50618-29f2-448e-925a-a625f6ddd495_images.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9451"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VAdIsx/ExukSUAHrrGg/lxcuWIq5LVSFjt4PElgTTNg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 16:54:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VAdIsx/ExukSUAHrrGg/lxcuWIq5LVSFjt4PElgTTNg="
+        }
+      ]
+    },
+    {
+      "Route": "image/33f50618-29f2-448e-925a-a625f6ddd495_images.smm3ywpsqe.jpg",
+      "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\33f50618-29f2-448e-925a-a625f6ddd495_images.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9451"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VAdIsx/ExukSUAHrrGg/lxcuWIq5LVSFjt4PElgTTNg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 16:54:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "smm3ywpsqe"
+        },
+        {
+          "Name": "label",
+          "Value": "image/33f50618-29f2-448e-925a-a625f6ddd495_images.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VAdIsx/ExukSUAHrrGg/lxcuWIq5LVSFjt4PElgTTNg="
+        }
+      ]
+    },
+    {
       "Route": "image/3e47e281-2f11-4f2e-8708-99dae0b6d6db_images.jpg",
       "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\3e47e281-2f11-4f2e-8708-99dae0b6d6db_images.jpg",
       "Selectors": [],
@@ -2040,6 +2393,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-VAdIsx/ExukSUAHrrGg/lxcuWIq5LVSFjt4PElgTTNg="
+        }
+      ]
+    },
+    {
+      "Route": "image/49874204-18e2-4b7d-a15d-75681949a223_ytk.hihayc3ok4.jpeg",
+      "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\49874204-18e2-4b7d-a15d-75681949a223_ytk.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "431276"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"10YKt0y2zq6/cNQb8GyjjK2ZkyGRCxGbItb9iI/iR0Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 17:04:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hihayc3ok4"
+        },
+        {
+          "Name": "label",
+          "Value": "image/49874204-18e2-4b7d-a15d-75681949a223_ytk.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-10YKt0y2zq6/cNQb8GyjjK2ZkyGRCxGbItb9iI/iR0Q="
+        }
+      ]
+    },
+    {
+      "Route": "image/49874204-18e2-4b7d-a15d-75681949a223_ytk.jpeg",
+      "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\49874204-18e2-4b7d-a15d-75681949a223_ytk.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "431276"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"10YKt0y2zq6/cNQb8GyjjK2ZkyGRCxGbItb9iI/iR0Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 17:04:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-10YKt0y2zq6/cNQb8GyjjK2ZkyGRCxGbItb9iI/iR0Q="
+        }
+      ]
+    },
+    {
+      "Route": "image/5caaffb5-7774-47f0-93f8-4e6983fd09ed_çm.6hbl2x4mje.webp",
+      "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\5caaffb5-7774-47f0-93f8-4e6983fd09ed_çm.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "76702"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WlOiwPCKRft0kPBLMLZHADP3PlEyu0FaN75DTlZ3Xo4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 16:07:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6hbl2x4mje"
+        },
+        {
+          "Name": "label",
+          "Value": "image/5caaffb5-7774-47f0-93f8-4e6983fd09ed_çm.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WlOiwPCKRft0kPBLMLZHADP3PlEyu0FaN75DTlZ3Xo4="
+        }
+      ]
+    },
+    {
+      "Route": "image/5caaffb5-7774-47f0-93f8-4e6983fd09ed_çm.webp",
+      "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\5caaffb5-7774-47f0-93f8-4e6983fd09ed_çm.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "76702"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WlOiwPCKRft0kPBLMLZHADP3PlEyu0FaN75DTlZ3Xo4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 16:07:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WlOiwPCKRft0kPBLMLZHADP3PlEyu0FaN75DTlZ3Xo4="
         }
       ]
     },
@@ -2290,6 +2807,170 @@
       ]
     },
     {
+      "Route": "image/9722e527-b6ee-4e93-a58a-75c463822ba4_ytk.hihayc3ok4.jpeg",
+      "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\9722e527-b6ee-4e93-a58a-75c463822ba4_ytk.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "431276"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"10YKt0y2zq6/cNQb8GyjjK2ZkyGRCxGbItb9iI/iR0Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 17:00:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hihayc3ok4"
+        },
+        {
+          "Name": "label",
+          "Value": "image/9722e527-b6ee-4e93-a58a-75c463822ba4_ytk.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-10YKt0y2zq6/cNQb8GyjjK2ZkyGRCxGbItb9iI/iR0Q="
+        }
+      ]
+    },
+    {
+      "Route": "image/9722e527-b6ee-4e93-a58a-75c463822ba4_ytk.jpeg",
+      "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\9722e527-b6ee-4e93-a58a-75c463822ba4_ytk.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "431276"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"10YKt0y2zq6/cNQb8GyjjK2ZkyGRCxGbItb9iI/iR0Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 17:00:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-10YKt0y2zq6/cNQb8GyjjK2ZkyGRCxGbItb9iI/iR0Q="
+        }
+      ]
+    },
+    {
+      "Route": "image/983d0230-5e85-4269-9e8a-2f81e0ba20ab_car.jpg",
+      "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\983d0230-5e85-4269-9e8a-2f81e0ba20ab_car.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7791"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nOJHP2SxrvTK1CmzpF0tAcQbE/p1uViC9Rb30RgGNDk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 16:18:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nOJHP2SxrvTK1CmzpF0tAcQbE/p1uViC9Rb30RgGNDk="
+        }
+      ]
+    },
+    {
+      "Route": "image/983d0230-5e85-4269-9e8a-2f81e0ba20ab_car.s2oyzzo2gp.jpg",
+      "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\983d0230-5e85-4269-9e8a-2f81e0ba20ab_car.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7791"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nOJHP2SxrvTK1CmzpF0tAcQbE/p1uViC9Rb30RgGNDk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 16:18:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s2oyzzo2gp"
+        },
+        {
+          "Name": "label",
+          "Value": "image/983d0230-5e85-4269-9e8a-2f81e0ba20ab_car.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nOJHP2SxrvTK1CmzpF0tAcQbE/p1uViC9Rb30RgGNDk="
+        }
+      ]
+    },
+    {
       "Route": "image/a00f74a1-09ff-481b-b544-7b176e11ccb2_bm.94txumsmmb.webp",
       "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\a00f74a1-09ff-481b-b544-7b176e11ccb2_bm.webp",
       "Selectors": [],
@@ -2368,88 +3049,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-qUc0ovs5gzh6gvAfzFrfAjnvrVxoOj9+r8YfQusqNvI="
-        }
-      ]
-    },
-    {
-      "Route": "image/b02b635a-91c0-48f6-8853-fc362b18f1aa_ytk.hihayc3ok4.jpeg",
-      "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\b02b635a-91c0-48f6-8853-fc362b18f1aa_ytk.jpeg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "431276"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"10YKt0y2zq6/cNQb8GyjjK2ZkyGRCxGbItb9iI/iR0Q=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 24 Dec 2024 13:04:05 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "hihayc3ok4"
-        },
-        {
-          "Name": "label",
-          "Value": "image/b02b635a-91c0-48f6-8853-fc362b18f1aa_ytk.jpeg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-10YKt0y2zq6/cNQb8GyjjK2ZkyGRCxGbItb9iI/iR0Q="
-        }
-      ]
-    },
-    {
-      "Route": "image/b02b635a-91c0-48f6-8853-fc362b18f1aa_ytk.jpeg",
-      "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\b02b635a-91c0-48f6-8853-fc362b18f1aa_ytk.jpeg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "431276"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"10YKt0y2zq6/cNQb8GyjjK2ZkyGRCxGbItb9iI/iR0Q=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 24 Dec 2024 13:04:05 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-10YKt0y2zq6/cNQb8GyjjK2ZkyGRCxGbItb9iI/iR0Q="
         }
       ]
     },
@@ -2536,6 +3135,252 @@
       ]
     },
     {
+      "Route": "image/d6b0bd46-bd3f-4205-99c0-e304fffffa30_bm.94txumsmmb.webp",
+      "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\d6b0bd46-bd3f-4205-99c0-e304fffffa30_bm.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3436"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qUc0ovs5gzh6gvAfzFrfAjnvrVxoOj9+r8YfQusqNvI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 16:55:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "94txumsmmb"
+        },
+        {
+          "Name": "label",
+          "Value": "image/d6b0bd46-bd3f-4205-99c0-e304fffffa30_bm.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qUc0ovs5gzh6gvAfzFrfAjnvrVxoOj9+r8YfQusqNvI="
+        }
+      ]
+    },
+    {
+      "Route": "image/d6b0bd46-bd3f-4205-99c0-e304fffffa30_bm.webp",
+      "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\d6b0bd46-bd3f-4205-99c0-e304fffffa30_bm.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3436"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qUc0ovs5gzh6gvAfzFrfAjnvrVxoOj9+r8YfQusqNvI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 16:55:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qUc0ovs5gzh6gvAfzFrfAjnvrVxoOj9+r8YfQusqNvI="
+        }
+      ]
+    },
+    {
+      "Route": "image/ec77e7da-c9fe-4e37-8d8d-8df5a0dff860_images.jpg",
+      "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\ec77e7da-c9fe-4e37-8d8d-8df5a0dff860_images.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9451"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VAdIsx/ExukSUAHrrGg/lxcuWIq5LVSFjt4PElgTTNg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 17:04:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VAdIsx/ExukSUAHrrGg/lxcuWIq5LVSFjt4PElgTTNg="
+        }
+      ]
+    },
+    {
+      "Route": "image/ec77e7da-c9fe-4e37-8d8d-8df5a0dff860_images.smm3ywpsqe.jpg",
+      "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\ec77e7da-c9fe-4e37-8d8d-8df5a0dff860_images.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9451"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VAdIsx/ExukSUAHrrGg/lxcuWIq5LVSFjt4PElgTTNg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 17:04:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "smm3ywpsqe"
+        },
+        {
+          "Name": "label",
+          "Value": "image/ec77e7da-c9fe-4e37-8d8d-8df5a0dff860_images.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VAdIsx/ExukSUAHrrGg/lxcuWIq5LVSFjt4PElgTTNg="
+        }
+      ]
+    },
+    {
+      "Route": "image/f233b5d6-a128-4ddf-ba72-70f6c4eedadb_images.jpg",
+      "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\f233b5d6-a128-4ddf-ba72-70f6c4eedadb_images.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9451"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VAdIsx/ExukSUAHrrGg/lxcuWIq5LVSFjt4PElgTTNg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 16:20:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VAdIsx/ExukSUAHrrGg/lxcuWIq5LVSFjt4PElgTTNg="
+        }
+      ]
+    },
+    {
+      "Route": "image/f233b5d6-a128-4ddf-ba72-70f6c4eedadb_images.smm3ywpsqe.jpg",
+      "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\f233b5d6-a128-4ddf-ba72-70f6c4eedadb_images.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9451"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VAdIsx/ExukSUAHrrGg/lxcuWIq5LVSFjt4PElgTTNg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 16:20:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "smm3ywpsqe"
+        },
+        {
+          "Name": "label",
+          "Value": "image/f233b5d6-a128-4ddf-ba72-70f6c4eedadb_images.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VAdIsx/ExukSUAHrrGg/lxcuWIq5LVSFjt4PElgTTNg="
+        }
+      ]
+    },
+    {
       "Route": "image/fad4394e-61ff-4249-8e49-4b53c6b42169_images.jpg",
       "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\fad4394e-61ff-4249-8e49-4b53c6b42169_images.jpg",
       "Selectors": [],
@@ -2614,6 +3459,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-VAdIsx/ExukSUAHrrGg/lxcuWIq5LVSFjt4PElgTTNg="
+        }
+      ]
+    },
+    {
+      "Route": "image/ffe49957-a514-4e00-b7ae-4c84dbe8ab95_ytk.hihayc3ok4.jpeg",
+      "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\ffe49957-a514-4e00-b7ae-4c84dbe8ab95_ytk.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "431276"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"10YKt0y2zq6/cNQb8GyjjK2ZkyGRCxGbItb9iI/iR0Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 16:14:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hihayc3ok4"
+        },
+        {
+          "Name": "label",
+          "Value": "image/ffe49957-a514-4e00-b7ae-4c84dbe8ab95_ytk.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-10YKt0y2zq6/cNQb8GyjjK2ZkyGRCxGbItb9iI/iR0Q="
+        }
+      ]
+    },
+    {
+      "Route": "image/ffe49957-a514-4e00-b7ae-4c84dbe8ab95_ytk.jpeg",
+      "AssetFile": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\ffe49957-a514-4e00-b7ae-4c84dbe8ab95_ytk.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "431276"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"10YKt0y2zq6/cNQb8GyjjK2ZkyGRCxGbItb9iI/iR0Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 16:14:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-10YKt0y2zq6/cNQb8GyjjK2ZkyGRCxGbItb9iI/iR0Q="
         }
       ]
     },

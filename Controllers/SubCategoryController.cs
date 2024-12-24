@@ -88,48 +88,35 @@ namespace ArchiveApp.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(int id, SubCategory subCategory, IFormFile ImageFile)
         {
-            var existingSubCategory = await _subCategoryRepository.GetByIdSubCategoryAsync(id);
-            if (existingSubCategory == null)
-            {
-                return NotFound();
-            }
-
-            // SubCategory bilgilerini güncelle
-            existingSubCategory.Name = subCategory.Name;
-            existingSubCategory.CategoryId = subCategory.CategoryId;
-
-            // Yeni bir resim yüklendiyse işle
             if (ImageFile != null && ImageFile.Length > 0)
             {
+                // Generate a unique file name
                 string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "image");
-
-                // Benzersiz dosya adı oluştur
+                if (!Directory.Exists(uploadPath))
+                {
+                    Directory.CreateDirectory(uploadPath);
+                }
                 string uniqueFileName = Guid.NewGuid().ToString() + "_" + ImageFile.FileName;
-
-                // Tam dosya yolu
                 string filePath = Path.Combine(uploadPath, uniqueFileName);
 
-                // Eski resmi sil
-                if (!string.IsNullOrEmpty(existingSubCategory.Image))
-                {
-                    string oldFilePath = Path.Combine(_webHostEnvironment.WebRootPath, existingSubCategory.Image.TrimStart('/'));
-                    if (System.IO.File.Exists(oldFilePath))
-                    {
-                        System.IO.File.Delete(oldFilePath);
-                    }
-                }
-
-                // Yeni resmi kaydet
+                // Save the new image
                 using (var fileStream = new FileStream(filePath, FileMode.Create))
                 {
                     await ImageFile.CopyToAsync(fileStream);
                 }
 
-                // Yeni dosya yolunu güncelle
-                existingSubCategory.Image = "/image/" + uniqueFileName;
+                // Pass the new image path to the repository
+                string newImagePath = "/image/" + uniqueFileName;
+
+                // Delegate update to repository
+                await _subCategoryRepository.UpdateSubCategoryAsync(id, subCategory, newImagePath);
+            }
+            else
+            {
+                // Update without changing the image
+                await _subCategoryRepository.UpdateSubCategoryAsync(id, subCategory);
             }
 
-            await _subCategoryRepository.UpdateSubCategoryAsync(id, existingSubCategory);
             return RedirectToAction("Index");
         }
 

@@ -2,10 +2,6 @@ using ArchiveApp.Models;
 using ArchiveApp.Repository.Abstracts;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.AspNetCore.Hosting;
-using System;
-using System.IO;
-using System.Threading.Tasks;
 using ArchiveApp.Repository;
 
 namespace ArchiveApp.Controllers
@@ -45,19 +41,15 @@ namespace ArchiveApp.Controllers
     {
       if (ImageFile != null && ImageFile.Length > 0)
       {
-        // wwwroot/image klasörüne yükleme
         string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "image");
 
-        // Klasör yoksa oluştur
         if (!Directory.Exists(uploadPath))
         {
           Directory.CreateDirectory(uploadPath);
         }
 
-        // Benzersiz dosya adı oluştur
         string uniqueFileName = Guid.NewGuid().ToString() + "_" + ImageFile.FileName;
 
-        // Tam dosya yolu
         string filePath = Path.Combine(uploadPath, uniqueFileName);
 
         using (var fileStream = new FileStream(filePath, FileMode.Create))
@@ -65,7 +57,6 @@ namespace ArchiveApp.Controllers
           await ImageFile.CopyToAsync(fileStream);
         }
 
-        // Dosya yolunu modelde sakla
         product.Image = "/image/" + uniqueFileName;
       }
 
@@ -88,50 +79,38 @@ namespace ArchiveApp.Controllers
     [HttpPost]
     public async Task<IActionResult> Edit(int id, Product product, IFormFile ImageFile)
     {
-      var existingProduct = await _productRepository.GetByIdProductAsync(id);
-      if (existingProduct == null)
-      {
-        return NotFound();
-      }
-
-      // Ürün bilgilerini güncelle
-      existingProduct.Name = product.Name;
-      existingProduct.SubCategoryId = product.SubCategoryId;
-
-      // Yeni bir resim yüklendiyse işle
       if (ImageFile != null && ImageFile.Length > 0)
       {
+        // Generate a new unique file name
         string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "image");
-
-        // Benzersiz dosya adı oluştur
+        if (!Directory.Exists(uploadPath))
+        {
+          Directory.CreateDirectory(uploadPath);
+        }
         string uniqueFileName = Guid.NewGuid().ToString() + "_" + ImageFile.FileName;
-
-        // Tam dosya yolu
         string filePath = Path.Combine(uploadPath, uniqueFileName);
 
-        // Eski resmi sil
-        if (!string.IsNullOrEmpty(existingProduct.Image))
-        {
-          string oldFilePath = Path.Combine(_webHostEnvironment.WebRootPath, existingProduct.Image.TrimStart('/'));
-          if (System.IO.File.Exists(oldFilePath))
-          {
-            System.IO.File.Delete(oldFilePath);
-          }
-        }
-
-        // Yeni resmi kaydet
+        // Save the new image
         using (var fileStream = new FileStream(filePath, FileMode.Create))
         {
           await ImageFile.CopyToAsync(fileStream);
         }
 
-        // Yeni dosya yolunu güncelle
-        existingProduct.Image = "/image/" + uniqueFileName;
+        // Pass the new image path to the repository for updating
+        string newImagePath = "/image/" + uniqueFileName;
+
+        // Delegate update to repository
+        await _productRepository.UpdateProductAsync(id, product, newImagePath);
+      }
+      else
+      {
+        // Update without changing the image
+        await _productRepository.UpdateProductAsync(id, product);
       }
 
-      await _productRepository.UpdateProductAsync(id, existingProduct);
       return RedirectToAction("Index");
     }
+
 
     [HttpPost]
     public async Task<IActionResult> Delete(int id)
@@ -153,10 +132,11 @@ namespace ArchiveApp.Controllers
     }
 
     [HttpGet]
-    public async Task<IActionResult> Details(string url)
+    public async Task<IActionResult> Details(string? url)
     {
       var product = await _productRepository.GetByUrlProductAsync(url);
       return View(product);
     }
   }
 }
+

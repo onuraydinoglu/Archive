@@ -76,54 +76,38 @@ namespace ArchiveApp.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(int id, Category category, IFormFile ImageFile)
         {
-            // Veritabanındaki mevcut kategori bilgilerini al
-            var existingCategory = await _categoryRepository.GetByIdCategoryAsync(id);
-
-            if (existingCategory == null)
-            {
-                return NotFound();
-            }
-
-            // Kategori bilgilerini güncelle
-            existingCategory.Name = category.Name;
-
-            // Yeni bir resim yüklendiyse işle
             if (ImageFile != null && ImageFile.Length > 0)
             {
-                // wwwroot/image klasörüne yükleme
+                // Generate a unique file name
                 string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "image");
-
-                // Benzersiz dosya adı oluştur
+                if (!Directory.Exists(uploadPath))
+                {
+                    Directory.CreateDirectory(uploadPath);
+                }
                 string uniqueFileName = Guid.NewGuid().ToString() + "_" + ImageFile.FileName;
-
-                // Tam dosya yolu
                 string filePath = Path.Combine(uploadPath, uniqueFileName);
 
-                // Eski resmi sil
-                if (!string.IsNullOrEmpty(existingCategory.Image))
-                {
-                    string oldFilePath = Path.Combine(_webHostEnvironment.WebRootPath, existingCategory.Image.TrimStart('/'));
-                    if (System.IO.File.Exists(oldFilePath))
-                    {
-                        System.IO.File.Delete(oldFilePath);
-                    }
-                }
-
-                // Yeni resmi kaydet
+                // Save the new image
                 using (var fileStream = new FileStream(filePath, FileMode.Create))
                 {
                     await ImageFile.CopyToAsync(fileStream);
                 }
 
-                // Yeni dosya yolunu güncelle
-                existingCategory.Image = "/image/" + uniqueFileName;
-            }
+                // Pass the new image path to the repository
+                string newImagePath = "/image/" + uniqueFileName;
 
-            // Veritabanındaki güncellemeyi kaydet
-            await _categoryRepository.UpdateCategoryAsync(id, existingCategory);
+                // Delegate update to repository
+                await _categoryRepository.UpdateCategoryAsync(id, category, newImagePath);
+            }
+            else
+            {
+                // Update without changing the image
+                await _categoryRepository.UpdateCategoryAsync(id, category);
+            }
 
             return RedirectToAction("Index");
         }
+
 
         [HttpPost]
         public async Task<IActionResult> Delete(int id)

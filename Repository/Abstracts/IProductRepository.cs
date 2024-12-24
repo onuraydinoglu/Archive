@@ -8,7 +8,7 @@ namespace ArchiveApp.Repository
     Task<Product> GetByIdProductAsync(int? id);
     Task<Product> GetByUrlProductAsync(string? url);
     Task<Product> AddProductAsync(Product product);
-    Task UpdateProductAsync(int id, Product product);
+    Task UpdateProductAsync(int id, Product product, string newImagePath = null);
     Task DeleteProductAsync(int id);
   }
 }
