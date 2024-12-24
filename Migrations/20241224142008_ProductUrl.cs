@@ -5,24 +5,23 @@
 namespace ArchiveApp.Migrations
 {
     /// <inheritdoc />
-    public partial class State : Migration
+    public partial class ProductUrl : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AddColumn<bool>(
-                name: "State",
+            migrationBuilder.AddColumn<string>(
+                name: "Url",
                 table: "Products",
-                type: "bit",
-                nullable: false,
-                defaultValue: false);
+                type: "nvarchar(max)",
+                nullable: true);
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "State",
+                name: "Url",
                 table: "Products");
         }
     }

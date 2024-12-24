@@ -1,6 +1,6 @@
 @model Product
 
-<form asp-controller="Products" asp-action="Edit" method="post">
+<form asp-controller="Products" asp-action="Edit" method="post" enctype="multipart/form-data">
   <input hidden asp-for="Id">
   <div class="mb-3">
     <label asp-for="Name" class="form-label">Name</label>
@@ -22,6 +22,14 @@
   <div class="mb-3">
     <label asp-for="Price" class="form-label">Price</label>
     <input asp-for="Price" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label asp-for="Image" class="form-label">Kategori resmi yükleyiniz.</label>
+    <input asp-for="Image" class="form-control" type="file" id="formFile" name="ImageFile">
+  </div>
+  <div class="mb-3">
+    <label asp-for="Url" class="form-label">Url</label>
+    <input asp-for="Url" class="form-control">
   </div>
   <div class="mb-3 form-check">
     <input asp-for="State" class="form-check-input" id="exampleCheck1">

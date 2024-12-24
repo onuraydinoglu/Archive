@@ -1,9 +1,13 @@
 ﻿@model Category
 
-<form asp-controller="Categories" asp-action="Create" method="post">
+<form asp-controller="Categories" asp-action="Create" method="post" enctype="multipart/form-data">
     <div class="mb-3">
         <label asp-for="Name" class="form-label">Name</label>
         <input asp-for="Name" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Image" class="form-label">Kategori resmi yükleyiniz.</label>
+        <input asp-for="Image" class="form-control" type="file" id="formFile" name="ImageFile">
     </div>
     <button type="submit" class="btn btn-success">Ekle</button>
 </form>

@@ -11,7 +11,10 @@
             <th scope="col">#</th>
             <th scope="col">Name</th>
             <th scope="col">Category Name</th>
+            <th scope="col">Image</th>
             <th scope="col">Action</th>
+
+
         </tr>
     </thead>
     <tbody>
@@ -21,6 +24,7 @@
                 <th scope="row">@item.Id</th>
                 <td>@item.Name</td>
                 <td>@item.Category?.Name</td>
+                <td><img src="@item.Image" class="card-img-top" style="height: 25px; width: 25px;" alt="..."></td>
                 <td>
                     <a asp-controller="SubCategory" asp-action="Edit" asp-route-Id="@item.Id"
                         class="btn btn-sm btn-warning">Edit</a>

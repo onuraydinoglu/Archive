@@ -1,10 +1,23 @@
 ﻿@model Category
 
-<form asp-controller="Categories" asp-action="Edit" method="post">
-    <input hidden asp-for="Id">
+<form asp-controller="Categories" asp-action="Edit" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Id" />
+
     <div class="mb-3">
         <label asp-for="Name" class="form-label">Name</label>
         <input asp-for="Name" class="form-control">
     </div>
+
+    <div class="mb-3">
+        @if (!string.IsNullOrEmpty(Model.Image))
+        {
+            <div class="mb-2">
+                <img src="@Model.Image" alt="Category Image" width="200" height="150" class="img-thumbnail">
+            </div>
+        }
+        <label asp-for="Image" class="form-label">Yeni kategori resmi yükleyiniz (isteğe bağlı).</label>
+        <input asp-for="Image" class="form-control" type="file" id="formFile" name="ImageFile">
+    </div>
+
     <button type="submit" class="btn btn-success">Güncelle</button>
 </form>

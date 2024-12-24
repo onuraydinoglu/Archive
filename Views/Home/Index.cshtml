@@ -1,5 +1,4 @@
-﻿@model IEnumerable<Category>
-
+﻿@model HomeViewModel
 <div id="carouselExampleIndicators" class="carousel slide container-fluid">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -37,13 +36,29 @@
         <div class="col-12 mb-3">
             <h2>Kategoriler</h2>
         </div>
-        @foreach (var item in Model)
+        @foreach (var item in Model.Categories)
         {
             <div class="col-3 mb-3">
                 <div class="card">
-                    <img src="~/image/ytk.jpeg" class="card-img-top" alt="...">
+                    <img src="@item.Image" class="card-img-top" style="height: 175px;" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center">@item.Name</h5>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div class="row mt-5">
+        <h2>Ürünler</h2>
+        @foreach (var item in Model.Products)
+        {
+            <div class="col-3">
+                <div class="card">
+                    <img src="@item.Image" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Name</h5>
+                        <a href="/products/@item.Url" class="btn btn-primary">Ürüne Git</a>
                     </div>
                 </div>
             </div>

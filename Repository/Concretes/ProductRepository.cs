@@ -19,7 +19,7 @@ namespace ArchiveApp.Repository
 
     public async Task<Product> GetByIdProductAsync(int? id)
     {
-      var product = await _context.Products.FindAsync(id);
+      var product = await _context.Products.Include(x => x.SubCategory).ThenInclude(c => c.Category).FirstOrDefaultAsync(x => x.Id == id);
 
       if (product is null)
       {
@@ -28,7 +28,15 @@ namespace ArchiveApp.Repository
 
       return product;
     }
-
+    public async Task<Product> GetByUrlProductAsync(string? url)
+    {
+      var product = await _context.Products.FirstOrDefaultAsync(x => x.Url == url);
+      if (product is null)
+      {
+        throw new Exception($"Aradığınız is : {url} bulunamadı.");
+      }
+      return product;
+    }
     public async Task<Product> AddProductAsync(Product product)
     {
       await _context.Products.AddAsync(product);
@@ -45,6 +53,7 @@ namespace ArchiveApp.Repository
       prd.Store = product.Store;
       prd.SubCategoryId = product.SubCategoryId;
       prd.State = product.State;
+      prd.Url = product.Url;
       _context.Update(prd);
       await _context.SaveChangesAsync();
     }
@@ -55,5 +64,7 @@ namespace ArchiveApp.Repository
       _context.Remove(prd);
       await _context.SaveChangesAsync();
     }
+
+
   }
 }
