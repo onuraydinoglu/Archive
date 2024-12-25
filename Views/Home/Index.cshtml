@@ -1,84 +1,44 @@
 ﻿@model HomeViewModel
-<div id="carouselExampleIndicators" class="carousel slide container-fluid">
-    <div class="carousel-indicators">
-        @{
-            int counter = 0; // Farklı bir değişken adı kullanılıyor
-            foreach (var item in Model.Categories)
-            {
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="@counter"
-                    class="@(counter == 0 ? "active" : "")" aria-current="true" aria-label="Slide @counter"></button>
-                ;
-                counter++;
-            }
-        }
-    </div>
-    <div class="carousel-inner">
-        @{
-            int index = 0;
-            foreach (var item in Model.Categories)
-            {
-                <div class="carousel-item @(index == 0 ? "active" : "")">
-                    <a asp-controller="Categories" asp-action="Index">
-                        <img src="@item.Image" class="d-block w-100" alt="..." style="height: 550px; object-fit:cover">
-
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>@item.Name</h5>
-                        </div>
-                    </a>
-                </div>
-                index++;
-            }
-        }
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
+<div class="carousel w-full">
+    @{
+        var categories = Model.Categories.ToList(); // IEnumerable'i listeye dönüştürüyoruz
+    }
+    @for (int i = 0; i < categories.Count; i++)
+    {
+        var item = categories[i];
+        var previousIndex = (i == 0) ? categories.Count - 1 : i - 1;
+        var nextIndex = (i == categories.Count - 1) ? 0 : i + 1;
+        <div id="slide@i" class="carousel-item relative w-full">
+            <img src="@item.Image" class="w-full" style="height: 550px; object-fit: cover;" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide@previousIndex" class="btn btn-circle">❮</a>
+                <a href="#slide@nextIndex" class="btn btn-circle">❯</a>
+            </div>
+            <div class="absolute bottom-5 left-5 bg-opacity-50 bg-black text-white p-3 rounded">
+                <h5>@item.Name</h5>
+            </div>
+        </div>
+    }
 </div>
 
-<div class="container my-5">
-    @* <div class="row">
-        <div class="col-12 mb-3">
-            <h2>Kategoriler</h2>
-        </div>
-        @foreach (var item in Model.Categories)
-        {
-            <div class="col-3 mb-3">
-                <div class="card">
-                    <img src="@item.Image" class="card-img-top" style="height: 175px;" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">@item.Name</h5>
-                    </div>
-                </div>
-            </div>
-        }
-    </div> *@
 
-    <div class="row mt-5">
-        <h2 class="text-dark">Ürünler</h2>
+<div class="container my-5">
+    <div class="grid grid-cols-4 gap-6 mt-5">
+        <h2 class="text-2xl font-bold text-dark col-span-full">Ürünler</h2>
         @foreach (var item in Model.Products)
         {
-            <div class="col-3">
-                <div class="card mb-3">
-                    <img src="@item.Image" class="card-img-top" alt="..." style="height: 170px;">
-                    <div class="card-body">
-                        <a href="products/details/@item.Url" class="text-secondary text-decoration-none">
-                            <h5 class="card-title">@item.Name</h5>
-                        </a>
+            <div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                    <img src="@item.Image" alt="@item.Name" class="rounded-xl h-40" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">@item.Name</h2>
+                    <p>@item.Description</p>
+                    <div class="card-actions">
+                        <a href="products/details/@item.Url" class="btn btn-primary">Ürüne Git</a>
                     </div>
                 </div>
             </div>
-
         }
     </div>
-    <div class="btn btn-primary">
-        DaisyUI Butonu
-    </div>
-
 </div>

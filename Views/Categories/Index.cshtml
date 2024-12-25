@@ -1,36 +1,41 @@
 ﻿@model IEnumerable<Category>
 
-<div class="d-flex justify-content-between">
-    <h2>Category List</h2>
-    <span><a asp-controller="Categories" asp-action="Create" class="btn btn-outline-primary">Add Category</a></span>
+<div class="flex justify-between">
+    <div>
+        <h2>Category List</h2>
+    </div>
+
+    <div>
+        <a asp-controller="Categories" asp-action="Create" class="btn btn-outline-primary">Add Category</a>
+    </div>
 </div>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">Name</th>
-            <th scope="col">Action</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var category in Model)
-        {
+<div class="w-full overflow-x-auto mt-5">
+    <table class="table w-full">
+        <thead>
             <tr>
-                <th scope="row">@category.Id</th>
-                <td>@category.Name</td>
-                <td>
-                    <a asp-controller="Categories" asp-action="Edit" asp-route-Id="@category.Id"
-                        class="btn btn-sm btn-warning">Edit</a>
-
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal-@category.Id">
-                        Delete
-                    </button>
-                </td>
+                <th>#</th>
+                <th>Name</th>
+                <th>Action</th>
             </tr>
-            @await Html.PartialAsync("_Delete", category)
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var category in Model)
+            {
+                <tr>
+                    <th>@category.Id</th>
+                    <td>@category.Name</td>
+                    <td>
+                        <a asp-controller="Categories" asp-action="Edit" asp-route-id="@category.Id"
+                            class="btn btn-sm btn-warning">Edit</a>
+                        <button class="btn btn-sm btn-danger"
+                            onclick="document.getElementById('modal-@category.Id').showModal()">
+                            Delete
+                        </button>
+                    </td>
+                </tr>
+                @await Html.PartialAsync("_Delete", category)
+            }
+        </tbody>
+    </table>
+</div>
