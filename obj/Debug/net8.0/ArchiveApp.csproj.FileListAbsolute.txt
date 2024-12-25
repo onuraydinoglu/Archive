@@ -339,3 +339,5 @@ C:\Users\dell\Desktop\Archive\obj\Debug\net8.0\refint\ArchiveApp.dll
 C:\Users\dell\Desktop\Archive\obj\Debug\net8.0\ArchiveApp.pdb
 C:\Users\dell\Desktop\Archive\obj\Debug\net8.0\ArchiveApp.genruntimeconfig.cache
 C:\Users\dell\Desktop\Archive\obj\Debug\net8.0\ref\ArchiveApp.dll
+C:\Users\dell\Desktop\Archive\bin\Debug\net8.0\package-lock.json
+C:\Users\dell\Desktop\Archive\bin\Debug\net8.0\package.json
