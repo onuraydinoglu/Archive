@@ -10,32 +10,32 @@
     </div>
 </div>
 
-<div class="w-full overflow-x-auto mt-5">
-    <table class="table w-full">
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Name</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var category in Model)
-            {
+<div class="flex justify-center">
+    <div class="w-[750px]">
+        <table class="table text-center">
+            <thead>
                 <tr>
-                    <th>@category.Id</th>
-                    <td>@category.Name</td>
-                    <td>
-                        <a asp-controller="Categories" asp-action="Edit" asp-route-id="@category.Id"
-                            class="btn btn-sm btn-warning">Edit</a>
-                        <button class="btn btn-sm btn-danger"
-                            onclick="document.getElementById('modal-@category.Id').showModal()">
-                            Delete
-                        </button>
-                    </td>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Action</th>
                 </tr>
-                @await Html.PartialAsync("_Delete", category)
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var category in Model)
+                {
+                    <tr>
+                        <th>@category.Id</th>
+                        <td>@category.Name</td>
+                        <td>
+                            <a asp-controller="Categories" asp-action="Edit" asp-route-id="@category.Id"
+                                class="btn btn-sm btn-warning">Edit</a>
+                            <button class="btn btn-sm btn-error" onclick="my_modal_@(category.Id).showModal()">Sil</button>
+
+                        </td>
+                    </tr>
+                    @await Html.PartialAsync("_Delete", category)
+                }
+            </tbody>
+        </table>
+    </div>
 </div>

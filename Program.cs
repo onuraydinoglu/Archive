@@ -18,7 +18,7 @@ builder.Services.AddScoped<ISubCategoryRepository, SubCategoryRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 var app = builder.Build();
-
+SeedData.TestData(app);
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

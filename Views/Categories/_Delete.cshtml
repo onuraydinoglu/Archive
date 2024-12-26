@@ -1,18 +1,17 @@
 @model Category
 
-<dialog id="modal-@Model.Id" class="modal">
+<dialog id="my_modal_@(Model.Id)" class="modal">
     <div class="modal-box">
         <h3 class="font-bold text-lg">Delete Confirmation</h3>
         <p class="py-4">Are you sure you want to delete <strong>@Model.Name</strong>?</p>
         <div class="modal-action">
             <!-- Cancel Button -->
-            <button type="button" class="btn btn-secondary"
-                onclick="document.getElementById('modal-@Model.Id').close()">Cancel</button>
+            <button type="button" class="btn btn-neutral" onclick="my_modal_@(Model.Id).close()">Cancel</button>
 
             <!-- Delete Form -->
             <form asp-controller="Categories" asp-action="Delete" asp-route-id="@Model.Id" method="post"
                 style="display:inline;">
-                <button type="submit" class="btn btn-danger">Delete</button>
+                <button type="submit" class="btn btn-error">Delete</button>
             </form>
         </div>
     </div>

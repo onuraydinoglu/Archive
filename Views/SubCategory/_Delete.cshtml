@@ -1,24 +1,18 @@
 @model SubCategory
 
-<!-- Modal -->
-<form asp-controller="SubCategory" asp-action="Delete" asp-route-id="@Model.Id" method="post">
-    <input hidden asp-for="Id">
-    <div class="modal fade" id="exampleModal-@Model.Id" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    @Model.Name Silmek istediğinize emin misiniz?
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-danger">Delete</button>
-                </div>
-            </div>
+<dialog id="my_modal_@(Model.Id)" class="modal">
+    <div class="modal-box">
+        <h3 class="font-bold text-lg">Delete Confirmation</h3>
+        <p class="py-4">Are you sure you want to delete <strong>@Model.Name</strong>?</p>
+        <div class="modal-action">
+            <!-- Cancel Button -->
+            <button type="button" class="btn btn-neutral" onclick="my_modal_@(Model.Id).close()">Cancel</button>
+
+            <!-- Delete Form -->
+            <form asp-controller="SubCategory" asp-action="Delete" asp-route-id="@Model.Id" method="post"
+                style="display:inline;">
+                <button type="submit" class="btn btn-error">Delete</button>
+            </form>
         </div>
     </div>
-</form>
+</dialog>

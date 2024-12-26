@@ -3,21 +3,23 @@
 <form asp-controller="Categories" asp-action="Edit" method="post" enctype="multipart/form-data">
     <input type="hidden" asp-for="Id" />
 
-    <div class="mb-3">
-        <label asp-for="Name" class="form-label">Name</label>
-        <input asp-for="Name" class="form-control">
-    </div>
+    <div class="flex justify-center">
+        <div class="w-[750px]">
+            <label class="form-control my-4">
+                <div class="label">
+                    <span class="label-text">Name</span>
+                </div>
+                <input asp-for="Name" type="text" placeholder="Type here" class="input input-bordered" />
 
-    <div class="mb-3">
-        @if (!string.IsNullOrEmpty(Model.Image))
-        {
-            <div class="mb-2">
-                <img src="@Model.Image" alt="Category Image" width="200" height="150" class="img-thumbnail">
-            </div>
-        }
-        <label asp-for="Image" class="form-label">Yeni kategori resmi yükleyiniz (isteğe bağlı).</label>
-        <input asp-for="Image" class="form-control" type="file" id="formFile" name="ImageFile">
+            </label>
+            <label class="form-control my-4">
+                <div class="label">
+                    <span class="label-text">Image</span>
+                </div>
+                <input asp-for="Image" type="file" class="file-input file-input-bordered" id="formFile"
+                    name="ImageFile" />
+            </label>
+            <button type="submit" class="btn btn-success w-full">Güncelle</button>
+        </div>
     </div>
-
-    <button type="submit" class="btn btn-success">Güncelle</button>
 </form>

@@ -57,7 +57,7 @@ namespace ArchiveApp.Controllers
           await ImageFile.CopyToAsync(fileStream);
         }
 
-        product.Image = "/image/" + uniqueFileName;
+        product.Image = uniqueFileName;
       }
 
       await _productRepository.AddProductAsync(product);
@@ -97,7 +97,7 @@ namespace ArchiveApp.Controllers
         }
 
         // Pass the new image path to the repository for updating
-        string newImagePath = "/image/" + uniqueFileName;
+        string newImagePath = uniqueFileName;
 
         // Delegate update to repository
         await _productRepository.UpdateProductAsync(id, product, newImagePath);

@@ -1,42 +1,47 @@
 @model IEnumerable<SubCategory>
 
-<div class="d-flex justify-content-between">
-    <h2>Movie List</h2>
-    <span><a asp-controller="SubCategory" asp-action="Create" class="btn btn-outline-primary">Add SubCategory</a></span>
+<div class="flex justify-between">
+    <div>
+        <h2>Movie List</h2>
+    </div>
+    <div>
+        <a asp-controller="SubCategory" asp-action="Create" class="btn btn-outline-primary">Add SubCategory</a>
+    </div>
 </div>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">Name</th>
-            <th scope="col">Category Name</th>
-            <th scope="col">Image</th>
-            <th scope="col">Action</th>
+<div class="flex justify-center">
+    <div class="w-[850px]">
+        <table class="table text-center">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Category Name</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Action</th>
 
 
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <th scope="row">@item.Id</th>
-                <td>@item.Name</td>
-                <td>@item.Category?.Name</td>
-                <td><img src="@item.Image" class="card-img-top" style="height: 25px; width: 25px;" alt="..."></td>
-                <td>
-                    <a asp-controller="SubCategory" asp-action="Edit" asp-route-Id="@item.Id"
-                        class="btn btn-sm btn-warning">Edit</a>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th scope="row">@item.Id</th>
+                        <td>@item.Name</td>
+                        <td>@item.Category?.Name</td>
+                        <td><img src="~/image/@item.Image" class="card-img-top mx-auto" style="height: 25px; width: 25px;"
+                                alt="..."></td>
+                        <td>
+                            <a asp-controller="SubCategory" asp-action="Edit" asp-route-Id="@item.Id"
+                                class="btn btn-sm btn-warning">Edit</a>
 
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal-@item.Id">
-                        Delete
-                    </button>
-                </td>
-            </tr>
-            @await Html.PartialAsync("_Delete", item)
-        }
-    </tbody>
-</table>
+                            <button class="btn btn-sm btn-error" onclick="my_modal_@(item.Id).showModal()">Sil</button>
+                        </td>
+                    </tr>
+                    @await Html.PartialAsync("_Delete", item)
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

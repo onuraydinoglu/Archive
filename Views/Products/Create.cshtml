@@ -1,39 +1,79 @@
 @model Product
 
-<form asp-controller="Products" asp-action="Create" method="post" enctype="multipart/form-data">
-  <div class="mb-3">
-    <label asp-for="Name" class="form-label">Name</label>
-    <input asp-for="Name" class="form-control">
+<div class="flex justify-between">
+  <div>
+    <h2>Product List</h2>
   </div>
-  <div class="mb-3">
-    <select asp-for=SubCategoryId asp-items="ViewBag.SubCategories" class="form-select">
-      <option value="">Seçiniz</option>
-    </select>
+  <div>
+    <a asp-controller="Products" asp-action="Index" class="btn btn-outline-primary">Products Index</a>
   </div>
-  <div class="mb-3">
-    <label asp-for="Description" class="form-label">Description</label>
-    <input asp-for="Description" class="form-control">
-  </div>
-  <div class="mb-3">
-    <label asp-for="Store" class="form-label">Store</label>
-    <input asp-for="Store" class="form-control">
-  </div>
-  <div class="mb-3">
-    <label asp-for="Price" class="form-label">Price</label>
-    <input asp-for="Price" class="form-control">
-  </div>
-  <div class="mb-3">
-    <label asp-for="Image" class="form-label">Kategori resmi yükleyiniz.</label>
-    <input asp-for="Image" class="form-control" type="file" id="formFile" name="ImageFile">
-  </div>
-  <div class="mb-3">
-    <label asp-for="Url" class="form-label">Url</label>
-    <input asp-for="Url" class="form-control">
-  </div>
-  <div class="mb-3 form-check">
-    <input asp-for="State" class="form-check-input" id="exampleCheck1">
-    <label asp-for="State" class="form-check-label" for="exampleCheck1">State?</label>
-  </div>
+</div>
 
-  <button type="submit" class="btn btn-success">Ekle</button>
+<form asp-controller="Products" asp-action="Create" method="post" enctype="multipart/form-data">
+
+  <div class="flex justify-center">
+    <div class="w-[750px]">
+
+      <label class="form-control my-4">
+        <div class="label">
+          <span class="label-text">Name</span>
+        </div>
+        <input asp-for="Name" type="text" placeholder="Type here" class="input input-bordered" />
+      </label>
+
+      <label class="form-control w-full max-w-xs">
+        <div class="label my-4">
+          <span class="label-text">SubCategory</span>
+        </div>
+        <select asp-for=SubCategoryId asp-items="ViewBag.SubCategories" class="select select-bordered">
+          <option disabled selected>Pick one</option>
+        </select>
+      </label>
+
+      <label class="form-control my-4">
+        <div class="label">
+          <span class="label-text">Description</span>
+        </div>
+        <textarea asp-for="Description" class="textarea textarea-bordered h-24" placeholder="Bio"></textarea>
+      </label>
+
+      <label class="form-control my-4">
+        <div class="label">
+          <span class="label-text">Store</span>
+        </div>
+        <input asp-for="Store" type="text" placeholder="Type here" class="input input-bordered" />
+      </label>
+
+      <label class="form-control my-4">
+        <div class="label">
+          <span class="label-text">Price</span>
+        </div>
+        <input asp-for="Price" type="text" placeholder="Type here" class="input input-bordered" />
+      </label>
+
+      <label class="form-control my-4">
+        <div class="label">
+          <span class="label-text">Url</span>
+        </div>
+        <input asp-for="Url" type="text" placeholder="Type here" class="input input-bordered" />
+      </label>
+
+      <label class="form-control my-4">
+        <div class="label">
+          <span class="label-text">Image</span>
+        </div>
+        <input asp-for="Image" type="file" class="file-input file-input-bordered" id="formFile" name="ImageFile" />
+      </label>
+
+      <div class="form-control my-4">
+        <label class="label cursor-pointer">
+          <span class="label-text">State?</span>
+          <input asp-for="State" type="checkbox" checked="checked" class="checkbox checkbox-primary" />
+        </label>
+      </div>
+
+      <button type="submit" class="btn btn-success w-full">Ekle</button>
+
+    </div>
+  </div>
 </form>

@@ -59,7 +59,7 @@ namespace ArchiveApp.Controllers
                 }
 
                 // Dosya yolunu modelde sakla
-                category.Image = "/image/" + uniqueFileName;
+                category.Image = uniqueFileName;
             }
 
             await _categoryRepository.AddCategoryAsync(category);
@@ -94,7 +94,7 @@ namespace ArchiveApp.Controllers
                 }
 
                 // Pass the new image path to the repository
-                string newImagePath = "/image/" + uniqueFileName;
+                string newImagePath = uniqueFileName;
 
                 // Delegate update to repository
                 await _categoryRepository.UpdateCategoryAsync(id, category, newImagePath);

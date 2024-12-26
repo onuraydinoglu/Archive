@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ArchiveApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241224130114_init")]
+    [Migration("20241226145616_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -71,6 +71,9 @@ namespace ArchiveApp.Migrations
 
                     b.Property<int?>("SubCategoryId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Url")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
