@@ -17,89 +17,87 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ArchiveApp
 build_property.RootNamespace = ArchiveApp
-build_property.ProjectDir = C:\Users\dell\Desktop\Archive\
+build_property.ProjectDir = C:\Users\onura\Desktop\Archive\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\dell\Desktop\Archive
+build_property.MSBuildProjectDirectory = C:\Users\onura\Desktop\Archive
 build_property._RazorSourceGeneratorDebug = 
-build_property.EffectiveAnalysisLevelStyle = 8.0
-build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/dell/Desktop/Archive/Views/Categories/Create.cshtml]
+[C:/Users/onura/Desktop/Archive/Views/Categories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/Archive/Views/Categories/Edit.cshtml]
+[C:/Users/onura/Desktop/Archive/Views/Categories/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/Archive/Views/Categories/Index.cshtml]
+[C:/Users/onura/Desktop/Archive/Views/Categories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/Archive/Views/Categories/_Delete.cshtml]
+[C:/Users/onura/Desktop/Archive/Views/Categories/_Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xfRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/Archive/Views/Home/Index.cshtml]
+[C:/Users/onura/Desktop/Archive/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/Archive/Views/Products/Create.cshtml]
+[C:/Users/onura/Desktop/Archive/Views/Products/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/Archive/Views/Products/Details.cshtml]
+[C:/Users/onura/Desktop/Archive/Views/Products/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/Archive/Views/Products/Edit.cshtml]
+[C:/Users/onura/Desktop/Archive/Views/Products/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/Archive/Views/Products/Index.cshtml]
+[C:/Users/onura/Desktop/Archive/Views/Products/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/Archive/Views/Products/_Delete.cshtml]
+[C:/Users/onura/Desktop/Archive/Views/Products/_Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcX0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/Archive/Views/Shared/Error.cshtml]
+[C:/Users/onura/Desktop/Archive/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/Archive/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/onura/Desktop/Archive/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/Archive/Views/SubCategory/Create.cshtml]
+[C:/Users/onura/Desktop/Archive/Views/SubCategory/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/Archive/Views/SubCategory/Edit.cshtml]
+[C:/Users/onura/Desktop/Archive/Views/SubCategory/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/Archive/Views/SubCategory/Index.cshtml]
+[C:/Users/onura/Desktop/Archive/Views/SubCategory/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/Archive/Views/SubCategory/_Delete.cshtml]
+[C:/Users/onura/Desktop/Archive/Views/SubCategory/_Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViQ2F0ZWdvcnlcX0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/Archive/Views/_ViewImports.cshtml]
+[C:/Users/onura/Desktop/Archive/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/Archive/Views/_ViewStart.cshtml]
+[C:/Users/onura/Desktop/Archive/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dell/Desktop/Archive/Views/Shared/_Layout.cshtml]
+[C:/Users/onura/Desktop/Archive/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-xpi48vdhjz

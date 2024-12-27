@@ -54,11 +54,17 @@ namespace ArchiveApp.Migrations
                     b.Property<string>("Image")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Link")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<int?>("Star")
+                        .HasColumnType("int");
 
                     b.Property<bool>("State")
                         .HasColumnType("bit");

@@ -5,7 +5,7 @@
 namespace ArchiveApp.Migrations
 {
     /// <inheritdoc />
-    public partial class init : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -53,8 +53,10 @@ namespace ArchiveApp.Migrations
                     Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     Store = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Star = table.Column<int>(type: "int", nullable: true),
                     State = table.Column<bool>(type: "bit", nullable: false),
                     Url = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Link = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     SubCategoryId = table.Column<int>(type: "int", nullable: true),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Image = table.Column<string>(type: "nvarchar(max)", nullable: true)

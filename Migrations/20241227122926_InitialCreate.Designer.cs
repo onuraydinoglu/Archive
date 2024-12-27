@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ArchiveApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241226145616_init")]
-    partial class init
+    [Migration("20241227122926_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -57,11 +57,17 @@ namespace ArchiveApp.Migrations
                     b.Property<string>("Image")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Link")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<int?>("Star")
+                        .HasColumnType("int");
 
                     b.Property<bool>("State")
                         .HasColumnType("bit");

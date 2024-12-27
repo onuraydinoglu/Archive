@@ -55,11 +55,13 @@ namespace ArchiveApp.Repository
       // Update product properties
       prd.Name = product.Name;
       prd.Description = product.Description;
+      prd.Star = product.Star;
       prd.Price = product.Price;
       prd.Store = product.Store;
       prd.SubCategoryId = product.SubCategoryId;
       prd.State = product.State;
       prd.Url = product.Url;
+      prd.Link = product.Link;
 
       // Update the image if a new image path is provided
       if (!string.IsNullOrEmpty(newImagePath))
