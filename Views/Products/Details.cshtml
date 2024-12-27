@@ -35,8 +35,9 @@
           <span>@Model.Description</span>
         </div>
 
-        <div class="">
-          <table class="table table-borderless mb-0">
+
+        <div class="overflow-x-auto">
+          <table class="table">
             <tbody>
               <tr>
                 <td>Product Code:</td>
@@ -51,8 +52,15 @@
                 <td>@Model.Store</td>
               </tr>
               <tr>
+                <td>Star:</td>
+                <td>@Model.Star</td>
+              </tr>
+              <tr>
                 <td>State:</td>
                 <td>@(Model.State ? "Alındı" : "Alınmadı")</td>
+              </tr>
+              <tr>
+                <td><a class="btn btn-sm" href="@Model.Link">Web sitesine git</a></td>
               </tr>
             </tbody>
           </table>

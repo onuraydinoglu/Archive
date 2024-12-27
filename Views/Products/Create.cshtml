@@ -60,6 +60,21 @@
 
       <label class="form-control my-4">
         <div class="label">
+          <span class="label-text">Link</span>
+        </div>
+        <input asp-for="Link" type="text" placeholder="Type here" class="input input-bordered" />
+      </label>
+
+      <div class="rating">
+        <input asp-for="Star" type="radio" value="1" class="mask mask-star-2 bg-purple-400" />
+        <input asp-for="Star" type="radio" value="2" class="mask mask-star-2 bg-purple-400" />
+        <input asp-for="Star" type="radio" value="3" class="mask mask-star-2 bg-purple-400" />
+        <input asp-for="Star" type="radio" value="4" class="mask mask-star-2 bg-purple-400" />
+        <input asp-for="Star" type="radio" value="5" class="mask mask-star-2 bg-purple-400" />
+      </div>
+
+      <label class="form-control my-4">
+        <div class="label">
           <span class="label-text">Image</span>
         </div>
         <input asp-for="Image" type="file" class="file-input file-input-bordered" id="formFile" name="ImageFile" />
