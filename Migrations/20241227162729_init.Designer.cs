@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ArchiveApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241227122926_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20241227162729_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

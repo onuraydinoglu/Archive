@@ -1,4 +1,5 @@
 ﻿@model HomeViewModel
+
 <div class="carousel w-full">
     @{
         var categories = Model.Categories.ToList(); // IEnumerable'i listeye dönüştürüyoruz
@@ -8,11 +9,11 @@
         var item = categories[i];
         var previousIndex = (i == 0) ? categories.Count - 1 : i - 1;
         var nextIndex = (i == categories.Count - 1) ? 0 : i + 1;
-        <div id="slide@i" class="carousel-item relative w-full">
+        <div id="slide@(i)" class="carousel-item relative w-full">
             <img src="~/image/@item.Image" class="w-full" style="height: 550px; object-fit: cover;" />
             <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide@previousIndex" class="btn btn-circle">❮</a>
-                <a href="#slide@nextIndex" class="btn btn-circle">❯</a>
+               <a data-target="slide@(previousIndex)" class="btn btn-circle">❮</a>
+               <a data-target="slide@(nextIndex)" class="btn btn-circle">❯</a>
             </div>
             <div class="absolute bottom-5 left-5 bg-opacity-50 bg-black text-white p-3 rounded">
                 <h5>@item.Name</h5>
@@ -20,7 +21,6 @@
         </div>
     }
 </div>
-
 
 <div class="container my-5">
     <div class="grid grid-cols-4 gap-6 mt-5">
@@ -60,3 +60,16 @@
         }
     </div>
 </div>
+
+<script>
+    document.querySelectorAll('.btn-circle').forEach(button => {
+        button.addEventListener('click', (event) => {
+            event.preventDefault(); // Tarayıcının varsayılan bağlantı davranışını engeller
+            const targetId = button.getAttribute('data-target'); // Hedef ID'yi al
+            const targetSlide = document.querySelector(`#${targetId}`); // Hedef slide div'ini bul
+            if (targetSlide) {
+                targetSlide.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        });
+    });
+</script>

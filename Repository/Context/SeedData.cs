@@ -18,11 +18,11 @@ namespace ArchiveApp.Repository
         if (!context.Categories.Any())
         {
           context.Categories.AddRange(
-              new Category { Name = "Home" },
-              new Category { Name = "Shopping" },
-              new Category { Name = "Car" },
-              new Category { Name = "Holiday" },
-              new Category { Name = "Airbnb" }
+              new Category { Name = "Home", Image = "ytk.jpeg" },
+              new Category { Name = "Shopping", Image = "ytk.jpeg" },
+              new Category { Name = "Car", Image = "ytk.jpeg" },
+              new Category { Name = "Holiday", Image = "ytk.jpeg" },
+              new Category { Name = "Airbnb", Image = "ytk.jpeg" }
           );
           context.SaveChanges();
         }

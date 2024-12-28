@@ -1,112 +1,116 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\onura\\Desktop\\Archive\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ArchiveApp.bundle.scp.css",
-      "PackagePath": "staticwebassets\\ArchiveApp.bundle.scp.css"
+      "Id": "C:\\Users\\dell\\Desktop\\Archive\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ArchiveApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ArchiveApp.oyb4qxc6ne.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\css\\output.css",
+      "Id": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\css\\output.css",
       "PackagePath": "staticwebassets\\css\\output.css"
     },
     {
-      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\css\\tailwind.css",
+      "Id": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\css\\tailwind.css",
       "PackagePath": "staticwebassets\\css\\tailwind.css"
     },
     {
-      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\image\\Bulasik.webp",
+      "Id": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\Bulasik.webp",
       "PackagePath": "staticwebassets\\image\\Bulasik.webp"
     },
     {
-      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\image\\Buzdolabi.webp",
+      "Id": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\Buzdolabi.webp",
       "PackagePath": "staticwebassets\\image\\Buzdolabi.webp"
     },
     {
-      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\image\\Kazak.webp",
+      "Id": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\Kazak.webp",
       "PackagePath": "staticwebassets\\image\\Kazak.webp"
     },
     {
-      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\image\\Kurutma.webp",
+      "Id": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\Kurutma.webp",
       "PackagePath": "staticwebassets\\image\\Kurutma.webp"
     },
     {
-      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\image\\LKoltuk.jpeg",
+      "Id": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\LKoltuk.jpeg",
       "PackagePath": "staticwebassets\\image\\LKoltuk.jpeg"
     },
     {
-      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\image\\Ruj.jpg",
+      "Id": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\Ruj.jpg",
       "PackagePath": "staticwebassets\\image\\Ruj.jpg"
     },
     {
-      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\image\\Yatak.jpeg",
+      "Id": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\Yatak.jpeg",
       "PackagePath": "staticwebassets\\image\\Yatak.jpeg"
     },
     {
-      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\image\\camasir.webp",
+      "Id": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\camasir.webp",
       "PackagePath": "staticwebassets\\image\\camasir.webp"
     },
     {
-      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\image\\ytk.jpeg",
+      "Id": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\image\\ytk.jpeg",
       "PackagePath": "staticwebassets\\image\\ytk.jpeg"
     },
     {
-      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\dell\\Desktop\\Archive\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ArchiveApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ArchiveApp.Microsoft.AspNetCore.StaticWebAssets.props",
