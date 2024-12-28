@@ -12,11 +12,15 @@
 
 <div class="flex flex-row m-[75px]">
 
-  <!--Product image -->
-  <div class="card bg-base-100 w-[550px] shadow-xl bg-[#660099] me-[125px]">
-    <figure class="px-10 py-10">
-      <img src="~/image/@Model.Image" alt="@Model.Name" class="rounded-xl" />
-    </figure>
+  <div>
+    <!--Product image -->
+    <div class="card bg-base-100 w-[550px] shadow-xl bg-[#660099] me-[125px]">
+      <figure class="px-10 py-10 flex items-center">
+        <div class="">
+          <img src="~/image/@Model.Image" alt="@Model.Name" class="rounded-xl" />
+        </div>
+      </figure>
+    </div>
   </div>
 
   <div class="divider divider-horizontal">Details</div>
@@ -25,7 +29,7 @@
   <div class="ms-[100px]">
     <div class="col-lg-6 ps-5" id="@Model.Id">
 
-      <div class="d-flex flex-column justify-content-between h-100">
+      <div class="d-flex flex-column">
         <div class=" border-bottom pb-4">
           <h1 class="fw-bold mb-3 font-bold">@Model.Name</h1>
           <h5 class="my-3 badge p-2 bg-gray-200 text-gray-500">@Model.SubCategory?.Category?.Name</h5>

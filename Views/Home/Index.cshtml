@@ -12,8 +12,8 @@
         <div id="slide@(i)" class="carousel-item relative w-full">
             <img src="~/image/@item.Image" class="w-full" style="height: 550px; object-fit: cover;" />
             <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-               <a data-target="slide@(previousIndex)" class="btn btn-circle">❮</a>
-               <a data-target="slide@(nextIndex)" class="btn btn-circle">❯</a>
+                <a data-target="slide@(previousIndex)" class="btn btn-circle">❮</a>
+                <a data-target="slide@(nextIndex)" class="btn btn-circle">❯</a>
             </div>
             <div class="absolute bottom-5 left-5 bg-opacity-50 bg-black text-white p-3 rounded">
                 <h5>@item.Name</h5>
@@ -22,44 +22,7 @@
     }
 </div>
 
-<div class="container my-5">
-    <div class="grid grid-cols-4 gap-6 mt-5">
-        <h2 class="text-2xl font-bold text-dark col-span-full">Ürünler</h2>
-        @foreach (var item in Model.Products)
-        {
-            <div class="card bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                    <img src="~/image/@item.Image" alt="@item.Name" class="rounded-xl h-40" />
-                </figure>
-                <div class="card-body items-center text-center">
-                    <h2 class="card-title">@item.Name</h2>
-                    <p>@item.Description</p>
-                    @* <div class="rating">
-                        <input type="radio" name="rating-@item.Id" class="mask mask-star-2 bg-purple-400" disabled />
-                        <input type="radio" name="rating-@item.Id" class="mask mask-star-2 bg-purple-400" disabled />
-                        <input type="radio" name="rating-@item.Id" class="mask mask-star-2 bg-purple-400" disabled />
-                        <input type="radio" name="rating-@item.Id" class="mask mask-star-2 bg-purple-400" disabled />
-                        <input type="radio" name="rating-@item.Id" class="mask mask-star-2 bg-purple-400" disabled />
-                    </div> *@
-                    <div class="rating">
-                        @for (int i = 1; i <= 5; i++) // 5 yıldız için döngü
-                        {
-                            <input 
-                                type="radio" 
-                                name="rating-@item.Id" 
-                                class="mask mask-star-2 bg-purple-400" 
-                                disabled 
-                                @(i <= item.Star ? "checked" : "") />
-                        }
-                    </div>
-                    <div class="card-actions">
-                        <a href="products/details/@item.Url" class="btn btn-primary">Ürüne Git</a>
-                    </div>
-                </div>
-            </div>
-        }
-    </div>
-</div>
+<vc:products-list></vc:products-list>
 
 <script>
     document.querySelectorAll('.btn-circle').forEach(button => {
