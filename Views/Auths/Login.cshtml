@@ -1,0 +1,40 @@
+<section class="container mx-auto my-10">
+    <div class="flex flex-col lg:flex-row justify-center items-center gap-8">
+        <!-- Görsel Alanı -->
+        <div class="w-full md:w-1/2 flex justify-center">
+            <img src="~/image/auths/Login.webp" alt="Login" class="max-w-xs lg:max-w-sm">
+        </div>
+        <!-- Form Alanı -->
+        <div class="w-full md:w-1/2">
+            <h2 class="text-2xl font-bold">Sign in to ArchiveApp</h2>
+            <p class="text-gray-600 mt-2">Welcome back to ArchiveApp! Enter your email to get started.</p>
+            <form class="mt-6 space-y-4 w-[75%]">
+                <!-- Email Input -->
+                <div>
+                    <input type="email" id="email" placeholder="Email" class="input input-bordered w-full" />
+                </div>
+                <!-- Password Input -->
+                <div>
+                    <input type="password" id="password" placeholder="******" class="input input-bordered w-full" />
+                </div>
+                <!-- Remember Me & Forgot Password -->
+                <div class="flex justify-between items-center text-sm">
+                    <label class="flex items-center space-x-2">
+                        <input type="checkbox" class="checkbox checkbox-primary" id="rememberMe" />
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="link link-primary">Forgot password?</a>
+                </div>
+                <!-- Sign In Button -->
+                <div>
+                    <button type="submit" class="btn btn-primary w-full">Login</button>
+                </div>
+                <!-- Sign Up Link -->
+                <p class="text-center text-sm">
+                    Don’t have an account?
+                    <a asp-controller="Users" asp-action="Register" class="link link-primary">Register</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</section>

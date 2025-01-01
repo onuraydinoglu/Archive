@@ -16,6 +16,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<ISubCategoryRepository, SubCategoryRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 var app = builder.Build();
 SeedData.TestData(app);

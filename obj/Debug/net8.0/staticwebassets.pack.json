@@ -49,6 +49,14 @@
       "PackagePath": "staticwebassets\\image\\Yatak.jpeg"
     },
     {
+      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\image\\auths\\Login.webp",
+      "PackagePath": "staticwebassets\\image\\auths\\Login.webp"
+    },
+    {
+      "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\image\\auths\\Register.webp",
+      "PackagePath": "staticwebassets\\image\\auths\\Register.webp"
+    },
+    {
       "Id": "C:\\Users\\onura\\Desktop\\Archive\\wwwroot\\image\\camasir.webp",
       "PackagePath": "staticwebassets\\image\\camasir.webp"
     },

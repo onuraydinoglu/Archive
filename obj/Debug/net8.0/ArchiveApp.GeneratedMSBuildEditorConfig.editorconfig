@@ -26,6 +26,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\onura\Desktop\Archive
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/onura/Desktop/Archive/Views/Auths/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aHNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/onura/Desktop/Archive/Views/Auths/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aHNcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/onura/Desktop/Archive/Views/Categories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

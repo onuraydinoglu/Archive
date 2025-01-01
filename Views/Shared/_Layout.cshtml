@@ -23,9 +23,10 @@
                 </ul>
             </div>
             <div>
-                <ul class="menu menu-horizontal px-1">
-                    <li><a href="#">Log in</a></li>
-                    <li><a href="#">Sing up</a></li>
+                <ul class="menu menu-horizontal px-1 flex items-center">
+                    <li><a asp-controller="Auths" asp-action="Login">Login</a></li>
+                    <li><a asp-controller="Auths" asp-action="Register" class="btn btn-primary w-[125px]">Register</a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -36,13 +37,6 @@
             @RenderBody()
         </main>
     </div>
-
-    @* <footer class="footer footer-center p-4 bg-base-200 text-base-content">
-        <div>
-            <p>&copy; 2024 - ArchiveApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></p>
-        </div>
-    </footer> *@
-
 
     <footer class="footer footer-center bg-gray-900 text-gray-100 rounded p-10">
         <nav class="grid grid-flow-col gap-4">

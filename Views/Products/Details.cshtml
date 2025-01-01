@@ -1,22 +1,21 @@
 @model ProductViewModel
 
+<div class="breadcrumbs text-sm">
+  <ul>
+    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+    <li><a href="/Categories/Index">@Model.Product.SubCategory?.Category?.Name</a></li>
+    <li><a href="/Categories/Index">@Model.Product.SubCategory?.Name</a></li>
+    <li>@Model.Product.Name</li>
+  </ul>
+</div>
+
 <div class="contianer wx-auto px-32">
 
-  <div class="breadcrumbs text-sm">
-    <ul>
-      <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-      <li><a href="/Categories/Index">@Model.Product.SubCategory?.Category?.Name</a></li>
-      <li><a href="/Categories/Index">@Model.Product.SubCategory?.Name</a></li>
-      <li>@Model.Product.Name</li>
-    </ul>
-  </div>
+  <div class="flex flex-row mt-5">
 
-
-  <div class="flex flex-row">
-
-    <div>
+    <div class="flex items-center">
       <!--Product image -->
-      <div class="card bg-base-100 w-[550px] shadow-xl bg-[#660099] me-[125px]">
+      <div class="card bg-base-100 w-[450px] shadow-xl bg-[#660099] me-[125px]">
         <figure class="px-10 py-10 flex items-center">
           <div class="">
             <img src="~/image/@Model.Product.Image" alt="@Model.Product.Name" class="rounded-xl" />

@@ -10,7 +10,7 @@
         var previousIndex = (i == 0) ? categories.Count - 1 : i - 1;
         var nextIndex = (i == categories.Count - 1) ? 0 : i + 1;
         <div id="slide@(i)" class="carousel-item relative w-full">
-            <img src="~/image/@item.Image" class="w-full" style="height: 650px; object-fit: cover;" />
+            <img src="~/image/@item.Image" class="w-full h-[85vh]" style="object-fit: cover;" />
             <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                 <a data-target="slide@(previousIndex)" class="btn btn-circle">❮</a>
                 <a data-target="slide@(nextIndex)" class="btn btn-circle">❯</a>

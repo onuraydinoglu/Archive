@@ -1,0 +1,45 @@
+@model User
+
+<div class="container mx-auto my-10">
+    <div class="flex flex-col lg:flex-row justify-center items-center gap-8">
+        <!-- Image Section -->
+        <div class="w-full md:w-1/2 flex justify-center">
+            <img src="~/image/auths/Register.webp" alt="Signup Illustration" class="max-w-xs lg:max-w-sm">
+        </div>
+
+        <!-- Form Section -->
+        <div class="w-full lg:w-1/2">
+            <h2 class="text-2xl font-bold text-gray-800">Get Start Archive</h2>
+            <p class="text-gray-500 mt-2">Welcome to ArchiveApp! Enter your email to get started.</p>
+
+            <form asp-controller="Auths" asp-action="Register" method="post" class="mt-6 space-y-4 w-[75%]">
+                <div class="flex flex-col gap-4">
+                    <!-- First Name -->
+                    <input type="text" asp-for="FirstName" placeholder="First name"
+                        class="input input-bordered w-full ">
+
+                    <!-- Last Name -->
+                    <input type="text" asp-for="LastName" placeholder="Last name" class="input input-bordered w-full ">
+
+                    <!-- Email -->
+                    <input type="email" asp-for="Email" placeholder="Email" class="input input-bordered w-full ">
+
+                    <!-- Password -->
+                    <input type="password" asp-for="Password" placeholder="*****" class="input input-bordered w-full">
+
+                    <!-- Register Button -->
+                    <button type="submit" class="btn btn-primary w-full">
+                        Register
+                    </button>
+                </div>
+
+                <small class="block mt-4 text-center text-gray-600">
+                    By continuing, you agree to our
+                    <a href="#" class="link link-primary">Terms of Service</a>
+                    and
+                    <a href="#" class="link link-primary">Privacy Policy</a>.
+                </small>
+            </form>
+        </div>
+    </div>
+</div>

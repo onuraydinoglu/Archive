@@ -15,10 +15,13 @@ namespace ArchiveApp.Repository.Concretes
             _dbSet = _context.Set<TEntity>();
         }
 
-        public async Task<IEnumerable<TEntity>> GetAllAsync() 
+        public async Task<IEnumerable<TEntity>> GetAllAsync() // => await _dbSet.ToListAsync();
+        // {
+        //     var entity = await _dbSet.ToListAsync();
+        //     return entity;
+        // }
         {
-            var entity = await _dbSet.ToListAsync();
-            return entity;
+            return await _dbSet.ToListAsync();
         }
 
         public async Task<TEntity> GetByIdAsync(int id)
