@@ -10,20 +10,21 @@
         var previousIndex = (i == 0) ? categories.Count - 1 : i - 1;
         var nextIndex = (i == categories.Count - 1) ? 0 : i + 1;
         <div id="slide@(i)" class="carousel-item relative w-full">
-            <img src="~/image/@item.Image" class="w-full" style="height: 550px; object-fit: cover;" />
+            <img src="~/image/@item.Image" class="w-full" style="height: 650px; object-fit: cover;" />
             <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                 <a data-target="slide@(previousIndex)" class="btn btn-circle">❮</a>
                 <a data-target="slide@(nextIndex)" class="btn btn-circle">❯</a>
             </div>
-            <div class="absolute bottom-5 left-5 bg-opacity-50 bg-black text-white p-3 rounded">
+            <div class="absolute bottom-5 left-5 bg-opacity-50 bg-black text-white p-3">
                 <h5>@item.Name</h5>
             </div>
         </div>
     }
 </div>
 
-<div class="my-5">
-    <h2 class="text-2xl font-bold text-dark col-span-full">Ürünler</h2>
+<div class="container mx-auto px-32 mt-[100px]">
+    <h2 class="text-2xl font-bold text-dark text-center">Ürünler</h2>
+    <div class="divider w-40 mx-auto"></div>
     <vc:products-list></vc:products-list>
 </div>
 

@@ -20,16 +20,7 @@ namespace ArchiveApp.Controllers
         public async Task<IActionResult> Index()
         {
             var categories = await _categoryRepository.GetAllCategoriesAsync();
-            var products = await _productRepository.GetAllProductsAsync(); // Eğer ürünleri de gösterecekseniz.
-
-            // HomeViewModel'i oluşturun ve kategorileri, ürünleri ekleyin.
-            var viewModel = new HomeViewModel
-            {
-                Categories = categories,
-                Products = products
-            };
-
-            return View(viewModel); // View'e HomeViewModel gönderiliyor.
+            return View(categories);
         }
 
     }

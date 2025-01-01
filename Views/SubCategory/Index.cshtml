@@ -36,7 +36,7 @@
                             <a asp-controller="SubCategory" asp-action="Edit" asp-route-Id="@item.Id"
                                 class="btn btn-sm btn-warning">Edit</a>
 
-                            <button class="btn btn-sm btn-error" onclick="my_modal_@(item.Id).showModal()">Sil</button>
+                            <button class="btn btn-sm btn-error" onclick="my_modal_@(item.Id).showModal()">Delete</button>
                         </td>
                     </tr>
                     @await Html.PartialAsync("_Delete", item)

@@ -12,9 +12,10 @@ namespace ArchiveApp.ViewComponents
             _productRepository = productRepository;
         }
 
-        public async Task<IViewComponentResult> Invoke()
+        public async Task<IViewComponentResult> InvokeAsync()
         {
             var product = await _productRepository.GetAllProductsAsync();
+
             return View(product);
         }
     }

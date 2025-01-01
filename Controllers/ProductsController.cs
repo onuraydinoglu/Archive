@@ -135,7 +135,15 @@ namespace ArchiveApp.Controllers
     public async Task<IActionResult> Details(string? url)
     {
       var product = await _productRepository.GetByUrlProductAsync(url);
-      return View(product);
+      var products = await _productRepository.GetAllProductsAsync();
+
+      var modelView = new ProductViewModel
+      {
+        Product = product,
+        Products = products
+      };
+
+      return View(modelView);
     }
   }
 }

@@ -29,7 +29,8 @@
                         <td>
                             <a asp-controller="Categories" asp-action="Edit" asp-route-id="@category.Id"
                                 class="btn btn-sm btn-warning">Edit</a>
-                            <button class="btn btn-sm btn-error" onclick="my_modal_@(category.Id).showModal()">Sil</button>
+                            <button class="btn btn-sm btn-error"
+                                onclick="my_modal_@(category.Id).showModal()">Delete</button>
 
                         </td>
                     </tr>
