@@ -13,17 +13,21 @@
     <header>
         <nav class="navbar bg-base-100 flex justify-between">
             <div>
-                <a class="btn btn-ghost text-xl">ArchiveApp</a>
+                <a asp-controller="Home" asp-action="Index" class="btn btn-ghost text-xl">ArchiveApp</a>
             </div>
             <div>
                 <ul class="menu menu-horizontal px-1">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Categories" asp-action="Index">Category</a></li>
-                    <li><a asp-area="" asp-controller="SubCategory" asp-action="Index">SubCategory</a></li>
-                    <li><a asp-area="" asp-controller="Products" asp-action="Index">Product</a></li>
+                    <li><a asp-controller="Categories" asp-action="Index">Category</a></li>
+                    <li><a asp-controller="SubCategory" asp-action="Index">SubCategory</a></li>
+                    <li><a asp-controller="Products" asp-action="Index">Product</a></li>
                 </ul>
             </div>
-            <div></div>
+            <div>
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="#">Log in</a></li>
+                    <li><a href="#">Sing up</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 

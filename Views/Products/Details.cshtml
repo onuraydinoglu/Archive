@@ -1,11 +1,11 @@
-@model Product
+@model ProductViewModel
 
 <div class="breadcrumbs text-sm">
   <ul>
     <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-    <li><a href="/Categories/Index">@Model.SubCategory?.Category?.Name</a></li>
-    <li><a href="/Categories/Index">@Model.SubCategory?.Name</a></li>
-    <li>@Model.Name</li>
+    <li><a href="/Categories/Index">@Model.Product.SubCategory?.Category?.Name</a></li>
+    <li><a href="/Categories/Index">@Model.Product.SubCategory?.Name</a></li>
+    <li>@Model.Product.Name</li>
   </ul>
 </div>
 
@@ -17,7 +17,7 @@
     <div class="card bg-base-100 w-[550px] shadow-xl bg-[#660099] me-[125px]">
       <figure class="px-10 py-10 flex items-center">
         <div class="">
-          <img src="~/image/@Model.Image" alt="@Model.Name" class="rounded-xl" />
+          <img src="~/image/@Model.Product.Image" alt="@Model.Product.Name" class="rounded-xl" />
         </div>
       </figure>
     </div>
@@ -27,16 +27,16 @@
 
   <!-- Product Name -->
   <div class="ms-[100px]">
-    <div class="col-lg-6 ps-5" id="@Model.Id">
+    <div class="col-lg-6 ps-5" id="@Model.Product.Id">
 
       <div class="d-flex flex-column">
         <div class=" border-bottom pb-4">
-          <h1 class="fw-bold mb-3 font-bold">@Model.Name</h1>
-          <h5 class="my-3 badge p-2 bg-gray-200 text-gray-500">@Model.SubCategory?.Category?.Name</h5>
-          <h5 class="my-3 badge p-2 bg-gray-200 text-gray-500">@Model.SubCategory?.Name</h5>
+          <h1 class="fw-bold mb-3 font-bold">@Model.Product.Name</h1>
+          <h5 class="my-3 badge p-2 bg-gray-200 text-gray-500">@Model.Product.SubCategory?.Category?.Name</h5>
+          <h5 class="my-3 badge p-2 bg-gray-200 text-gray-500">@Model.Product.SubCategory?.Name</h5>
         </div>
         <div class="border-bottom pb-5">
-          <span>@Model.Description</span>
+          <span>@Model.Product.Description</span>
         </div>
 
 
@@ -45,26 +45,26 @@
             <tbody>
               <tr>
                 <td>Product Code:</td>
-                <td>@Model.Id</td>
+                <td>@Model.Product.Id</td>
               </tr>
               <tr>
                 <td>Price:</td>
-                <td>@Model.Price</td>
+                <td>@Model.Product.Price</td>
               </tr>
               <tr>
                 <td>Store:</td>
-                <td>@Model.Store</td>
+                <td>@Model.Product.Store</td>
               </tr>
               <tr>
                 <td>Star:</td>
-                <td>@Model.Star</td>
+                <td>@Model.Product.Star</td>
               </tr>
               <tr>
                 <td>State:</td>
-                <td>@(Model.State ? "Alındı" : "Alınmadı")</td>
+                <td>@(Model.Product.State ? "Alındı" : "Alınmadı")</td>
               </tr>
               <tr>
-                <td><a class="btn btn-sm" href="@Model.Link">Web sitesine git</a></td>
+                <td><a class="btn btn-sm" href="@Model.Product.Link">Web sitesine git</a></td>
               </tr>
             </tbody>
           </table>
@@ -74,3 +74,5 @@
   </div>
 
 </div>
+
+<vc:products-list showOnlyTopRated="false"></vc:products-list>
